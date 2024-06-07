@@ -1,5 +1,7 @@
 import React from "react";
 import Style from "../CSS/HomeStyle.module.css";
+import { IoIosStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
 
 function Home() {
   return (
@@ -70,15 +72,15 @@ function Home() {
 
                 {/* ---------------review content-------- */}
                 <div class={`mt-3 mt-lg-0 ${Style.reviewsGroup}`}>
-                  <strong>4.5</strong>
+                  <strong  class={` ${Style.rating}`}>4.5</strong>
 
-                  <i class="bi-star-fill">*</i>
-                  <i class="bi-star-fill">*</i>
-                  <i class="bi-star-fill">*</i>
-                  <i class="bi-star-fill">*</i>
-                  <i class="bi-star"></i>
+                  <i class={`${Style.biStarFill}`}> <IoIosStar /></i>
+                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
+                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
+                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
+                  <i class={`${Style.biStarUnFill}`}> <IoIosStarOutline /></i>
 
-                  <small class="ms-3">2,564 reviews</small>
+                  <small  class={`ms-3 ${Style.review}`}>2,564 reviews</small>
                 </div>
               </div>
             </div>
