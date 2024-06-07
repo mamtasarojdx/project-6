@@ -1,0 +1,85 @@
+.sectionPadding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Review {
+  color: #e9c46a;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.peopleSaying {
+  font-weight: bolder;
+  font-size: 38px;
+}
+
+.customBlock {
+  background-image: url("../../Images/businessman-sitting-by-table-cafe\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.customBlockImageWrap {
+  background-color: rgba(231, 111, 81, 0.85);
+  border-radius: 0 0 10px 10px;
+
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin: auto;
+  padding: 25px 45px;
+}
+
+.avatarImage {
+  border: 4px solid white;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 60px;
+  margin: auto;
+}
+
+.customBlockInfo {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  margin-top: -20px;
+}
+
+.reviewsGroup {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.customBlock .biStarFill {
+  color: #e9c46a;
+}
+.customBlock::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.biStarUnFill {
+  color: white;
+}
+
+.rating {
+  font-weight: bolder;
+  font-size: 34px;
+}
+.starRating {
+  font-size: 22px;
+}
+.LoremText{
+    font-size: 18px;
+}

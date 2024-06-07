@@ -1,0 +1,184 @@
+.contactSection {
+  background-color: #f4a261;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contactSection .container {
+  position: relative;
+}
+
+.getEbook {
+  font-weight: bolder;
+  font-size: 43px;
+}
+.sayHi {
+  color: #e9c46a;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.Contact {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.London {
+  font-size: 22px;
+  color: white;
+  font-weight: bolder;
+}
+.London2 {
+  font-size: 22px;
+  color: white;
+  font-weight: bolder;
+}
+.London2:hover {
+  font-size: 22px;
+  color: #e76f51;
+  font-weight: bolder;
+}
+.contactSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 450px 450px 0 0;
+  border-color: white;
+  /* border-color: var(--white-color) transparent transparent; */
+  pointer-events: none;
+}
+
+.ebookDownloadForm {
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  --bs-bg-opacity: 1;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.formControl:hover {
+  border-color: #e76f51;
+  cursor: pointer;
+}
+
+.customForm .inputGroupText {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  right: 25px;
+  margin: 10px;
+}
+.inputGroupText {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+.customFormIcon {
+  position: relative;
+  z-index: 22;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.submitBtn {
+  width: 95%;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 12px 10px 15px 0px;
+  color: white;
+  background-color: #f4a261;
+  border: 1px solid #f4a261;
+  border-radius: 2.25rem;
+}
+.submitBtn:hover {
+  color: white;
+  background-color: #e76f51;
+  border: 1px solid #e76f51;
+}
+.formControl {
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 12px 0 15px 15px;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.socialIcon {
+  margin: 0;
+  padding: 0;
+}
+.socialIconItem {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.socialIconLink {
+  background: #e9c46a;
+  border-radius: 50%;
+  color: white;
+  font-size: 17px;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 32px;
+  /* transition: background 0.2s, color 0.2s; */
+}
+
+.socialIconLink:hover {
+  background-color: #e76f51;
+  color: white;
+}
+.copyrightText {
+  color: white;
+  font-weight: 600;
+}
+.copyrightLink {
+  color: #e76f51;
+  text-decoration: none;
+}

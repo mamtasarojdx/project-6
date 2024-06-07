@@ -1,0 +1,99 @@
+.inside {
+  color: #e9c46a;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.PreviewGlance {
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.navPills {
+  border: 2px solid #e76f51;
+  border-radius: var(--border-radius-medium);
+  position: sticky;
+  top: 120px;
+  padding: 30px;
+  border-radius: 35px;
+}
+.smoothScrollLink {
+  color: #9fa3a7;
+  background-color: #f0f8ff;
+  font-size: 18px;
+  border-radius: 30px;
+  margin: 8px 0;
+  border-color: #f0f8ff;
+  padding: 15px 10px 18px 20px;
+}
+
+.smoothScrollLink:hover {
+  background-color: #e76f51;
+  color: white;
+  border-radius: 30px;
+  border-color: #e76f51;
+  padding: 12px 10px 15px 20px;
+}
+.smoothScrollContent {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #7d7f83;
+}
+
+.smoothScrollContent:hover {
+  color: white;
+}
+.introducingBook{
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.scrollspyExample2 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.paraText{
+    color: #9fa3a7;
+}
+.spanText{
+    color: #7d7f83;
+}
+
+.blockQuote {
+    background: #f0f8ff;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bolder;
+    color:black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 12px 40px 40px 40px;
+    text-align: center;
+}
+
+.blockQuoteText{
+ 
+    color: #f4a261;
+    font-size: 60px;
+    /* line-height: 1rem; */
+    display: block;
+}
+.dots{
+    color: #9fa3a7;
+    margin: 40px 0 20px 0;
+}
+.imgFluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.imgFluid2{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.freePik{
+    color: #e97f63;
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.NavBar {
+  background: transparent;
+  z-index: 99;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.stickyWrapper {
+  position: fixed;
+  z-index: 111;
+  background-color: black;
+
+  /* bottom: 650px; */
+  width: 1517px;
+}
+
+.navbarBookIcon {
+  background-color: #e9c46a;
+  border-radius: var(--border-radius-large);
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  font-size: var(--h6-font-size);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.squareTriangle {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  background-color: #e9c46a;
+  border-color: #e9c46a;
+  /* border-color: transparent transparent var(--secondary-color) transparent; */
+  pointer-events: none;
+  transform: rotate(48deg);
+}
+.bookText {
+  font-weight: bolder;
+  color: white;
+  font-size: 30px;
+  padding-left: 8px;
+}
+.navbarIcon {
+  color: white;
+  font-weight: bold;
+}
+.navbarIcon:hover {
+  color: #e76f51;
+  font-weight: bold;
+}
+.DownloadBtn {
+  color: #d6915b;
+}
+
+.downloadAnchor {
+  color: #d6915b;
+  text-decoration: none;
+}
+
+.DownBtnDiv {
+  border-radius: 20px;
+  border-color: #e76f51;
+  border: 2px solid #e76f51;
+  padding: 5px 20px;
+}
+.DownBtnDiv:hover {
+  background-color: #e76f51;
+  padding: 5px 20px;
+  transition: background-color 0.3s ease;
+}
+.treeIcon {
+  color: white;
+  padding: 5px 35px;
+}
