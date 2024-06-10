@@ -21,7 +21,7 @@ function Contact() {
   };
   return (
     <>
-      <section class={` ${Style.contactSection} section-padding`} id="section_5">
+      <section class={` ${Style.contactSection} section-padding`} id="contact">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-12 mx-auto">

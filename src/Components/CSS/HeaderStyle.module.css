@@ -5,19 +5,90 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+
+.navbarToggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 35px;
+  outline: none;
+  position: absolute;
+  top: 26px;
+  right: 65px;
+  display: none;
+}
+.collapseNavbar {
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+
+.navbarToggler .navbarTogglerIcon {
+  display: block;
+  width: 30px;
+  height: 12px;
+  position: relative;
+}
+
+.navbarTogglerIcon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.navbarToggler .navbarTogglerIcon:before,
+.navbarToggler .navbarTogglerIcon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: white;
+  width: 30px;
+  height: 2px;
+  content: "";
+}
+.navbarToggler .navbarTogglerIcon:before,
+.navbarToggler .navbarTogglerIcon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: white;
+  width: 30px;
+  height: 2px;
+  content: "";
+}
 .NavBar {
   background: transparent;
   z-index: 99;
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: black;
 }
 .stickyWrapper {
   position: fixed;
   z-index: 111;
-  background-color: black;
-
-  /* bottom: 650px; */
   width: 1517px;
+}
+
+.btnNaira {
+  text-decoration: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  /* -webkit-backface-visibility: hidden;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; */
 }
 
 .navbarBookIcon {
@@ -34,6 +105,23 @@ body {
   text-align: center;
   position: relative;
 }
+.DownBtnDiv {
+  display: block;
+  border-radius: 20px;
+  border-color: #e76f51;
+  border: 2px solid #e76f51;
+  padding: 5px 20px;
+  position: absolute;
+  top: 16px;
+  right: 126px;
+}
+.DownBtnDiv:hover {
+  background-color: #e76f51;
+  padding: 5px 20px;
+  border-color: #e76f51;
+  border: 2px solid #e76f51;
+  transition: background-color 0.3s ease;
+}
 
 .squareTriangle {
   content: "";
@@ -47,7 +135,7 @@ body {
   border-width: 0 0 20px 20px;
   background-color: #e9c46a;
   border-color: #e9c46a;
-  /* border-color: transparent transparent var(--secondary-color) transparent; */
+
   pointer-events: none;
   transform: rotate(48deg);
 }
@@ -60,11 +148,13 @@ body {
 .navbarIcon {
   color: white;
   font-weight: bold;
+  margin: 10px;
 }
 .navbarIcon:hover {
   color: #e76f51;
   font-weight: bold;
 }
+
 .DownloadBtn {
   color: #d6915b;
 }
@@ -74,18 +164,35 @@ body {
   text-decoration: none;
 }
 
-.DownBtnDiv {
-  border-radius: 20px;
-  border-color: #e76f51;
-  border: 2px solid #e76f51;
-  padding: 5px 20px;
-}
-.DownBtnDiv:hover {
-  background-color: #e76f51;
-  padding: 5px 20px;
-  transition: background-color 0.3s ease;
-}
 .treeIcon {
   color: white;
   padding: 5px 35px;
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .stickyWrapper {
+    width: 800px;
+  }
+  .navbarToggler {
+    display: block;
+  }
+  .collapseNavbar {
+    position: unset;
+  }
+  .navbarIcon {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+  .stickyWrapper {
+    width: 1020px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .stickyWrapper {
+    width: 2560px;
+  }
 }

@@ -4,7 +4,7 @@ import Style from "../CSS/BookStyle.module.css"
 function Book() {
   return (
     <>
-      <section class={`${Style.sectionPadding} `} id="section_2">
+      <section class={`${Style.sectionPadding} `} id="book">
                 <div class="container">
                     <div class="row">
 

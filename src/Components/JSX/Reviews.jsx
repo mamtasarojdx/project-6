@@ -6,7 +6,7 @@ import { IoIosStarOutline } from "react-icons/io";
 function Reviews() {
   return (
     <>
-      <section class={`reviews-section ${Style.sectionPadding}`} id="section_4">
+      <section class={`reviews-section ${Style.sectionPadding}`} id="reviews">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-12 text-center mb-5">

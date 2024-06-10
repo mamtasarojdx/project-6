@@ -79,9 +79,20 @@
 }
 .starRating {
   font-size: 22px;
-  
 }
-.LoremText{
-    font-size: 18px;
-    font-weight: 700;
+.LoremText {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .customBlock {
+    margin-bottom: 22px;
+  }
 }

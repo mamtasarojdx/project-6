@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       {/* --------------home page content--------------- */}
-      <section class={` ${Style.heroSection} d-flex justify-content-center align-items-center`} id="section_1">
+      <section class={` ${Style.heroSection} d-flex justify-content-center align-items-center`} id="home">
         <div class="container">
           <div class="row">
             <div class={`col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0 ${Style.homeText}`}>
@@ -17,13 +17,13 @@ function Home() {
 
               <span class={` ${Style.DiscoverDiv}`}>
                 {" "}
-                <a href="#section_2" class={` ${Style.Discover}`}>
+                <a href="#book" class={` ${Style.Discover}`}>
                   Discover More
                 </a>
               </span>
 
               <span class={` ${Style.Author}`}>
-                <a href="#section_3" class={` ${Style.MeetAuthor}`}>
+                <a href="#author" class={` ${Style.MeetAuthor}`}>
                   Meet the Author
                 </a>
               </span>
@@ -45,7 +45,7 @@ function Home() {
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-12">
-              <div class="avatar-group d-flex flex-wrap align-items-center">
+              <div class={` ${Style.avatarGroup} d-flex flex-wrap align-items-center`}>
                 <img
                   src="https://templatemo.com/templates/templatemo_588_ebook_landing/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg"
                   class={`${Style.avatarImage}`}
@@ -92,3 +92,6 @@ function Home() {
 }
 
 export default Home;
+
+
+// https://www.google.com/search?q=linear+gradient+css+on+hover+for+button++bottom+to+top+then+changed+in+underline+using+react+js&sca_esv=5b7618d9e88b0320&sca_upv=1&sxsrf=ADLYWILWQ-yFN0sRQ7gwBVKCJolamE-T2g%3A1718022297172&ei=mfBmZoiXCeKMseMPr52jwAQ&ved=0ahUKEwjIx_Plg9GGAxViRmwGHa_OCEgQ4dUDCBA&uact=5&oq=linear+gradient+css+on+hover+for+button++bottom+to+top+then+changed+in+underline+using+react+js&gs_lp=Egxnd3Mtd2l6LXNlcnAiX2xpbmVhciBncmFkaWVudCBjc3Mgb24gaG92ZXIgZm9yIGJ1dHRvbiAgYm90dG9tIHRvIHRvcCB0aGVuIGNoYW5nZWQgaW4gdW5kZXJsaW5lIHVzaW5nIHJlYWN0IGpzSMKSAVD9CFiLjAFwAXgBkAEAmAHbAqABmyqqAQgwLjE4LjcuMrgBA8gBAPgBAZgCDKACghLCAgQQABhHwgIHECMYsAIYJ8ICCBAAGIAEGKIEwgIIECEYoAEYwwTCAgoQIRigARjDBBgKwgIEECEYCpgDAIgGAZAGCJIHBzEuNy4zLjGgB_uUAQ&sclient=gws-wiz-serp#ip=1

@@ -4,7 +4,7 @@ import Style from "../CSS/AuthorStyle.module.css"
 function Author() {
   return (
     <>
-      <section class={`${Style.authorSection} section-padding`} id="section_3">
+      <section class={`${Style.authorSection} section-padding`} id="author">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-12">
