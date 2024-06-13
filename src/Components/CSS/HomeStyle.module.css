@@ -97,17 +97,14 @@ body {
   cursor: pointer;
   background-position: 0% 100%;
   background-size: 100% 200%;
- 
+  transition: background-position 0.3s ease;
 }
 
 .MeetAuthor:hover {
   background-image: linear-gradient(to bottom, transparent 50%, #e76f51 50%);
-  color: #e76f51;
   text-decoration: underline;
- 
-
-  transition: background-position 0.3s ease;
   background-position: 0% 0%;
+  
 }
 
 .imgFluid {
