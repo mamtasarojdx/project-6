@@ -24,6 +24,7 @@ function Contact() {
       <section class={` ${Style.contactSection} section-padding`} id="contact">
         <div class="container">
           <div class="row">
+            {/* ---------------------User Form----------------------------- */}
             <div class="col-lg-5 col-12 mx-auto">
               <form class={` ${Style.customForm} ${Style.ebookDownloadForm} bg-white shadow`} action="#" method="post" role="form">
                 <div class="text-center mb-5">
@@ -31,10 +32,9 @@ function Contact() {
                 </div>
 
                 <div class="ebook-download-form-body">
-                <div class={` ${Style.inputGroup} mb-4`} onMouseEnter={handleHover1} onMouseLeave={handleHover1}>
-                  {isHovered1 ? (
-                    <>
-                     
+                  <div class={` ${Style.inputGroup} mb-4`} onMouseEnter={handleHover1} onMouseLeave={handleHover1}>
+                    {isHovered1 ? (
+                      <>
                         <input
                           type="text"
                           name="ebook-form-name"
@@ -51,12 +51,9 @@ function Contact() {
                             <IoPersonOutline />
                           </i>
                         </span>
-                      
-                    </>
-                  ) :
-                   (
-                    <>
-                      
+                      </>
+                    ) : (
+                      <>
                         <input
                           type="text"
                           name="ebook-form-name"
@@ -67,41 +64,47 @@ function Contact() {
                           placeholder="Your Name"
                           required=""
                         />
-                     
-                    </>
-                  )}</div>
+                      </>
+                    )}
+                  </div>
 
                   <div class={` ${Style.inputGroup} mb-4`} onMouseEnter={handleHover2} onMouseLeave={handleHover2}>
-                    {isHovered2 ? (<> <input
-                      type="email"
-                      name="ebook-email"
-                      id="ebook-email"
-                      pattern="[^ @]*@[^ @]*"
-                      class={` ${Style.formControl} `}
-                      placeholder="your@company.com"
-                      aria-label="ebook-form-email"
-                      aria-describedby="basic-addon2"
-                      required=""
-                    />
-
-                    <span class={` ${Style.inputGroupText} `} id="basic-addon2">
-                      <i class="custom-form-icon bi-envelope">
-                        <CiMail />
-                      </i>
-                    </span></>): (<> <input
-                      type="email"
-                      name="ebook-email"
-                      id="ebook-email"
-                      pattern="[^ @]*@[^ @]*"
-                      class={` ${Style.formControl} `}
-                      placeholder="your@company.com"
-                      aria-label="ebook-form-email"
-                      aria-describedby="basic-addon2"
-                      required=""
-                    />
-
-                   </>)}
-                   
+                    {isHovered2 ? (
+                      <>
+                        {" "}
+                        <input
+                          type="email"
+                          name="ebook-email"
+                          id="ebook-email"
+                          pattern="[^ @]*@[^ @]*"
+                          class={` ${Style.formControl} `}
+                          placeholder="your@company.com"
+                          aria-label="ebook-form-email"
+                          aria-describedby="basic-addon2"
+                          required=""
+                        />
+                        <span class={` ${Style.inputGroupText} `} id="basic-addon2">
+                          <i class="custom-form-icon bi-envelope">
+                            <CiMail />
+                          </i>
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        {" "}
+                        <input
+                          type="email"
+                          name="ebook-email"
+                          id="ebook-email"
+                          pattern="[^ @]*@[^ @]*"
+                          class={` ${Style.formControl} `}
+                          placeholder="your@company.com"
+                          aria-label="ebook-form-email"
+                          aria-describedby="basic-addon2"
+                          required=""
+                        />
+                      </>
+                    )}
                   </div>
 
                   <div class="col-lg-8 col-md-10 col-8 mx-auto">
@@ -113,6 +116,7 @@ function Contact() {
               </form>
             </div>
 
+            {/* ----------------------side text content----------------------- */}
             <div class="col-lg-6 col-12">
               <h6 class={` ${Style.sayHi} mt-5 `}>Say hi and talk to us</h6>
 
@@ -132,7 +136,7 @@ function Contact() {
               </p>
 
               <p>
-                <a href="mailto:info@company.com" class={` ${Style.London2} mx-1 contact-link`}>
+                <a href="#" class={` ${Style.London2} mx-1 contact-link`}>
                   info@company.com
                 </a>
               </p>

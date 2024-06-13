@@ -1,0 +1,48 @@
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+}
+.link--kale::before {
+  height: 10px;
+  top: 100%;
+  opacity: 0;
+}
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e76f51;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+}
+.link--kale::after {
+  content: "";
+  transition: opacity 0.3s;
+  opacity: 0;
+  transition-delay: 0s;
+}
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+  color: #e76f51;
+  touch-action: manipulation;
+  transition: all 0.3s;
+}

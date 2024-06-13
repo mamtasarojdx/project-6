@@ -80,6 +80,14 @@ body {
   width: 1517px;
 }
 
+.active {
+  color: #e46e51 !important; 
+}
+
+.inactive {
+  color: #ffffff;
+}
+
 .btnNaira {
   text-decoration: none;
   padding: 0;

@@ -2,6 +2,7 @@ import React from "react";
 import Style from "../CSS/HomeStyle.module.css";
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
+import "../CSS/Home.css";
 
 function Home() {
   return (
@@ -72,15 +73,27 @@ function Home() {
 
                 {/* ---------------review content-------- */}
                 <div class={`mt-3 mt-lg-0 ${Style.reviewsGroup}`}>
-                  <strong  class={` ${Style.rating}`}>4.5</strong>
+                  <strong class={` ${Style.rating}`}>4.5</strong>
 
-                  <i class={`${Style.biStarFill}`}> <IoIosStar /></i>
-                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
-                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
-                  <i class={`${Style.biStarFill}`}><IoIosStar /></i>
-                  <i class={`${Style.biStarUnFill}`}> <IoIosStarOutline /></i>
+                  <i class={`${Style.biStarFill}`}>
+                    {" "}
+                    <IoIosStar />
+                  </i>
+                  <i class={`${Style.biStarFill}`}>
+                    <IoIosStar />
+                  </i>
+                  <i class={`${Style.biStarFill}`}>
+                    <IoIosStar />
+                  </i>
+                  <i class={`${Style.biStarFill}`}>
+                    <IoIosStar />
+                  </i>
+                  <i class={`${Style.biStarUnFill}`}>
+                    {" "}
+                    <IoIosStarOutline />
+                  </i>
 
-                  <small  class={`ms-3 ${Style.review}`}>2,564 reviews</small>
+                  <small class={`ms-3 ${Style.review}`}>2,564 reviews</small>
                 </div>
               </div>
             </div>
@@ -92,6 +105,3 @@ function Home() {
 }
 
 export default Home;
-
-
-// https://www.google.com/search?q=linear+gradient+css+on+hover+for+button++bottom+to+top+then+changed+in+underline+using+react+js&sca_esv=5b7618d9e88b0320&sca_upv=1&sxsrf=ADLYWILWQ-yFN0sRQ7gwBVKCJolamE-T2g%3A1718022297172&ei=mfBmZoiXCeKMseMPr52jwAQ&ved=0ahUKEwjIx_Plg9GGAxViRmwGHa_OCEgQ4dUDCBA&uact=5&oq=linear+gradient+css+on+hover+for+button++bottom+to+top+then+changed+in+underline+using+react+js&gs_lp=Egxnd3Mtd2l6LXNlcnAiX2xpbmVhciBncmFkaWVudCBjc3Mgb24gaG92ZXIgZm9yIGJ1dHRvbiAgYm90dG9tIHRvIHRvcCB0aGVuIGNoYW5nZWQgaW4gdW5kZXJsaW5lIHVzaW5nIHJlYWN0IGpzSMKSAVD9CFiLjAFwAXgBkAEAmAHbAqABmyqqAQgwLjE4LjcuMrgBA8gBAPgBAZgCDKACghLCAgQQABhHwgIHECMYsAIYJ8ICCBAAGIAEGKIEwgIIECEYoAEYwwTCAgoQIRigARjDBBgKwgIEECEYCpgDAIgGAZAGCJIHBzEuNy4zLjGgB_uUAQ&sclient=gws-wiz-serp#ip=1

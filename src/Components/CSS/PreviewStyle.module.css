@@ -17,7 +17,8 @@
   border-radius: 35px;
 }
 .smoothScrollLink {
-  color: #9fa3a7;
+  color: #84898e;
+  font-weight: 600;
   background-color: #f0f8ff;
   font-size: 18px;
   border-radius: 30px;
@@ -33,67 +34,75 @@
   border-color: #e76f51;
   padding: 12px 10px 15px 20px;
 }
+.active {
+  background-color: #e76f51;
+  color: white;
+  border-radius: 30px;
+  border-color: #e76f51;
+  padding: 12px 10px 15px 20px;
+}
 .smoothScrollContent {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bolder;
-  color: #7d7f83;
 }
 
 .smoothScrollContent:hover {
   color: white;
 }
-.introducingBook{
-    font-weight: bolder;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-size: 25px;
+.introducingBook {
+  font-weight: bolder;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 
 .scrollspyExample2 {
-    padding-right: 30px;
-    padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
-.paraText{
-    color: #9fa3a7;
+.paraText {
+  color: #9fa3a7;
 }
-.spanText{
-    color: #7d7f83;
+.spanText {
+  color: #7d7f83;
 }
 
 .blockQuote {
-    background: #f0f8ff;
-    border-radius: 8px;
-    font-size: 22px;
-    font-weight: bolder;
-    color:black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 12px 40px 40px 40px;
-    text-align: center;
+  background: #f0f8ff;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 12px 40px 40px 40px;
+  text-align: center;
 }
 
-.blockQuoteText{
- 
-    color: #f4a261;
-    font-size: 60px;
-    /* line-height: 1rem; */
-    display: block;
+.blockQuoteText {
+  color: #f4a261;
+  font-size: 60px;
+  /* line-height: 1rem; */
+  display: block;
 }
-.dots{
-    color: #9fa3a7;
-    margin: 40px 0 20px 0;
+.dots {
+  border-bottom: 5px dotted gray;
+  min-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
+
 .imgFluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
-.imgFluid2{
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
+.imgFluid2 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
-.freePik{
-    color: #e97f63;
-    text-decoration: none;
+.freePik {
+  color: #e97f63;
+  text-decoration: none;
 }

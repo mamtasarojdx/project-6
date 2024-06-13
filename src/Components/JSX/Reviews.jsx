@@ -14,7 +14,7 @@ function Reviews() {
 
               <h2 className={`mb-4 ${Style.peopleSaying}`}>What people saying...</h2>
             </div>
-
+            {/* --------------------1st Card------------------- */}
             <div class="col-lg-4 col-12">
               <div class={`${Style.customBlock} d-flex flex-wrap`}>
                 <div class={`${Style.customBlockImageWrap} d-flex flex-column`}>
@@ -31,7 +31,7 @@ function Reviews() {
                     <strong class="d-block text-white">Artist</strong>
                   </div>
                 </div>
-
+                {/* ------------------------card content-------------- */}
                 <div class={`${Style.customBlockInfo}`}>
                   <div class={`${Style.customBlockInfo}`}>
                     <strong class={`text-white ${Style.rating}`}>4.5</strong>
@@ -62,6 +62,8 @@ function Reviews() {
                 </div>
               </div>
             </div>
+
+            {/* --------------------2nd Card------------------- */}
             <div class="col-lg-4 col-12">
               <div class={`${Style.customBlock} d-flex flex-wrap`}>
                 <div class={`${Style.customBlockImageWrap} d-flex flex-column`}>
@@ -78,7 +80,7 @@ function Reviews() {
                     <strong class="d-block text-white">Producer</strong>
                   </div>
                 </div>
-
+                {/* ------------------------card content-------------- */}
                 <div class={`${Style.customBlockInfo}`}>
                   <div class={`${Style.customBlockInfo}`}>
                     <strong class={`text-white ${Style.rating}`}>3.5</strong>
@@ -110,6 +112,7 @@ function Reviews() {
               </div>
             </div>
 
+            {/* --------------------3rd Card------------------- */}
             <div class="col-lg-4 col-12">
               <div class={`${Style.customBlock} d-flex flex-wrap`}>
                 <div class={`${Style.customBlockImageWrap} d-flex flex-column`}>
@@ -126,7 +129,7 @@ function Reviews() {
                     <strong class="d-block text-white">VP, Design</strong>
                   </div>
                 </div>
-
+                {/* ------------------------card content-------------- */}
                 <div class={`${Style.customBlockInfo}`}>
                   <div class={`${Style.customBlockInfo}`}>
                     <strong class={`text-white ${Style.rating}`}>5</strong>
