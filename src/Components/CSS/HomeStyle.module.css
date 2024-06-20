@@ -97,14 +97,32 @@ body {
   cursor: pointer;
   background-position: 0% 100%;
   background-size: 100% 200%;
-  transition: background-position 0.3s ease;
+  transition: background-position 0.2s ease;
+  overflow: hidden;
 }
 
-.MeetAuthor:hover {
-  background-image: linear-gradient(to bottom, transparent 50%, #e76f51 50%);
-  text-decoration: underline;
-  background-position: 0% 0%;
+.MeetAuthor::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 10px;
+  top: 34px;
+  width: 92%;
+  color: #e76f51;
+  height: 18px; 
+  background: #e76f51; 
+  transform: scaleY(0); 
+  transform-origin: bottom; 
   
+  transition: transform 0.2s ease, height 0.2s ease; 
+}
+a:hover{
+  color: #e76f51;
+}
+.MeetAuthor:hover::after {
+  transform: scaleY(1); 
+  /* margin-top: -1px;  */
+  color: #e76f51;
 }
 
 .imgFluid {

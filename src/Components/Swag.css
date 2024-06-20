@@ -1,0 +1,144 @@
+.fancy-2 {
+  padding: 12px 8px 0; /* Adjust padding */
+  box-shadow: 0 0 0px 80px var(--c, #0000);
+  background: linear-gradient(#000 0 0) bottom/100% 0 no-repeat; /* Linear gradient starting from bottom */
+  clip-path: polygon(
+    0 0, /* Start clip-path from top */
+    -15px 0,
+    -15px var(--x, -10px),
+    0 var(--x, -10px),
+    0 10px, /* Start from top */
+    100% 10px,
+    100% var(--x, -10px),
+    calc(100% + 15px) var(--x, -10px),
+    calc(100% + 15px) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+  /* transition: 0.3s linear, box-shadow 0.2s 0.3s; */
+}
+
+.fancy-2:hover {
+  --c: #000;
+  color: #fff;
+  --x: calc(90% - 60px); /* Adjust x position for hover effect */
+  background-size: 100% 100%; /* Adjust background size for hover effect */
+  clip-path: polygon(
+    0 calc(100% - var(--x, -10px)), /* Adjust clip-path to end at bottom */
+    -15px calc(100% - var(--x, -10px)),
+    -15px calc(100% - 10px),
+    0 calc(100% - 10px),
+    0 10px, /* Start from top */
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% + 15px) calc(100% - 10px),
+    calc(100% + 15px) calc(100% - var(--x, -10px)),
+    100% calc(100% - var(--x, -10px)),
+    100% 0,
+    0 0
+  );
+  transition: 0.2s, clip-path linear 0.4s 0.2s, background-size linear 0.4s 0.2s, color linear 0.4s 0.2s;
+}
+
+/* .fancy-2 {
+  padding: 0 8px 12px;
+  box-shadow: 0 0 0px 80px var(--c, #0000);
+  background: linear-gradient(#000 0 0) top/100% 0 no-repeat;
+  clip-path: polygon(
+    0 calc(10px + var(--x, -10px)),
+    -15px calc(10px + var(--x, -10px)),
+    -15px var(--x, -10px),
+    0 var(--x, -10px),
+    0 -10px,
+    100% -10px,
+    100% var(--x, -10px),
+    calc(100% + 15px) var(--x, -10px),
+    calc(100% + 15px) calc(10px + var(--x, -10px)),
+    100% calc(10px + var(--x, -10px)),
+    100% 100%,
+    0 100%
+  );
+
+}
+.fancy-2
+{
+--c: #000;
+color: #fff;
+--x: calc(100% - 10px);
+background-size: 100% 100%;
+transition: 0.2s, clip-path linear 0.4s 0.2s, background-size linear 0.4s 0.2s, color linear 0.4s 0.2s;
+} */
+
+[class] {
+  display: inline-block;
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 25px;
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+}
+
+
+
+
+
+
+/* 
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+}
+a {
+  display: inline-block;
+  color: orangered;
+  text-decoration: none;
+}
+a, button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+.link--kale::before {
+  height: 10px;
+  top: 100%;
+  opacity: 0;
+}
+.link::before {
+  content: '';
+}
+.link::before, .link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: orangered;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link--kale::after {
+  content: '';
+  transition: opacity 0.3s;
+  opacity: 0;
+  transition-delay: 0s;
+}
+.link::before, .link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: orangered;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  color:white;
+} */

@@ -2,7 +2,6 @@ import React from "react";
 import Style from "../CSS/HomeStyle.module.css";
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarOutline } from "react-icons/io";
-import "../CSS/Home.css";
 
 function Home() {
   return (
