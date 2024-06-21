@@ -2,15 +2,18 @@ import React, { useEffect, useRef } from "react";
 import { IoBookOutline } from "react-icons/io5";
 import Style from "../CSS/HeaderStyle.module.css";
 import { PiTreeDuotone } from "react-icons/pi";
+import { IoCloseSharp } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
 
 function Header() {
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [active, setActive] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
 
   const sectionIds = ["home", "book", "author", "reviews", "contact"];
-  
+
   const handleHover = () => {
     setIsHovered(!isHovered);
   };
@@ -45,18 +48,16 @@ function Header() {
 
   // const handleItemClick = (itemNumber) => {
   //   setActive(itemNumber);
-   // Smooth scroll to the section
+  // Smooth scroll to the section
   //   document.getElementById(sectionIds[itemNumber - 1]).scrollIntoView({ behavior: "smooth" });
   // };
-
-  
 
   return (
     <>
       {/* --------------Navbar(header)------------ */}
       <section>
         <div id="sticky-wrapper" class={` ${Style.stickyWrapper}`} style={{ height: "88px" }}>
-          <nav class={`navbar navbar-expand-lg ${Style.NavBar}`}>
+          <nav className={`navbar navbar-expand-lg ${Style.NavBar} ${active === 1 ? Style.transparentBg : Style.blackBg}`}>
             <div class="container">
               <a class={` ${Style.btnNaira}`} href="#">
                 <i class={`bi-book me-2 ${Style.navbarBookIcon}`}>
@@ -85,18 +86,24 @@ function Header() {
 
               {/* --------------navbar toggle button ------------- */}
               <div
-                class={`collapsed ${Style.navbarToggler}`}
+                className={`collapsed ${Style.navbarToggler}`}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
-                aria-expanded="false"
+                aria-expanded={isOpen ? "true" : "false"}
                 aria-label="Toggle navigation"
+                onClick={() => setIsOpen(!isOpen)}
               >
-                <span>
-                  <div class={`collapsed ${Style.navbarTogglerIcon} ${Style.line1}`}></div>
-                  <div class={`collapsed ${Style.navbarTogglerIcon} ${Style.line1}`}></div>
-                </span>
+                {isOpen ? (
+                  <span className={`${Style.menuIcon}`}>
+                    <IoCloseSharp />
+                  </span>
+                ) : (
+                  <span className={`${Style.menuIcon}`}>
+                    <IoMdMenu />
+                  </span>
+                )}
               </div>
 
               <div className="collapse navbar-collapse" id="navbarNav">
@@ -159,5 +166,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;

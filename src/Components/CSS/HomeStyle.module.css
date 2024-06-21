@@ -38,7 +38,6 @@ body {
   height: 0;
   border-style: solid;
   border-width: 0 0 450px 450px;
-
   border-color: transparent transparent #ffffff transparent;
   pointer-events: none;
 }
@@ -74,7 +73,7 @@ body {
   color: white;
   border-color: #f4a261;
   border: 2px solid #f4a261;
-  padding: 8px 19px 10px 22px;
+  padding: 6px 19px 8px 22px;
 }
 
 .DiscoverDiv:hover {
@@ -104,25 +103,47 @@ body {
 .MeetAuthor::after {
   content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 10px;
   top: 34px;
   width: 92%;
   color: #e76f51;
-  height: 18px; 
-  background: #e76f51; 
-  transform: scaleY(0); 
-  transform-origin: bottom; 
-  
-  transition: transform 0.2s ease, height 0.2s ease; 
+  height: 12px;
+  background: #e76f51;
+  transform: scaleY(0);
+  transform-origin: bottom;
+
+  transition: transform 0.2s ease, height 0.2s ease;
 }
-a:hover{
+a:hover {
   color: #e76f51;
 }
 .MeetAuthor:hover::after {
-  transform: scaleY(1); 
-  /* margin-top: -1px;  */
+  transform: scaleY(1);
   color: #e76f51;
+  animation: lineUp 0.3s ease forwards;
+}
+
+@keyframes lineUp {
+  0% {
+    transform-origin: 50% 100%;
+    transform: scale3d(1, 0.045, 1);
+  }
+
+  50% {
+    transform-origin: 50% 100%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  51% {
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  100% {
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 0.045, 1);
+  }
 }
 
 .imgFluid {
@@ -195,4 +216,32 @@ a:hover{
 .review {
   font-size: 16px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* .img-fluid {
+    margin-top: -15% !important;
+  } */
+  .heroSection {
+    padding-top: 8%;
+    height: 120%;
+  }
+  .imgFluid {
+    margin-top: -12%;
+  }
+  .ebookIntro{
+  
+    font-size: 20px;
+}
+.ebookLand{
+ 
+  font-size: 55px;
+  
+}
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 2560px) {
 }

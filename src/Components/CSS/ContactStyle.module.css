@@ -177,6 +177,7 @@
 .copyrightText {
   color: white;
   font-weight: 600;
+  /* letter-spacing: 1px; */
 }
 .copyrightLink {
   color: #e76f51;
@@ -185,4 +186,23 @@
 .copyrightLink:hover {
   color: #e76f51;
   text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .contactSection {
+    
+    padding-bottom: 50px;
+    margin-top: -9%;
+  }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 2560px) {
+  
 }

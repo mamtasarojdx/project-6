@@ -57,7 +57,7 @@ function Reviews() {
                   </div>
 
                   <p class={`text-white mb-0 ${Style.LoremText}`}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, such as templatemo one-page, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
               </div>

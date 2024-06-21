@@ -41,39 +41,41 @@ body {
   background-position: center;
   background-size: 100%;
 }
+
 .navbarToggler .navbarTogglerIcon:before,
 .navbarToggler .navbarTogglerIcon:after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: white;
-  width: 30px;
+  width: 40px;
   height: 2px;
   content: "";
-}
-.navbarToggler .navbarTogglerIcon:before,
-.navbarToggler .navbarTogglerIcon:after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background: white;
-  width: 30px;
-  height: 2px;
-  content: "";
 }
+.menuIcon {
+  position: absolute;
+  color: white;
+  font-size: 37px;
+  top: -18px;
+  right: 0px;
+}
+
 .NavBar {
-  background: transparent;
   z-index: 99;
-  padding-top: 15px;
+  padding: 25px 0;
   padding-bottom: 15px;
   background-color: black;
 }
+
+.transparentBg {
+  background-color: transparent;
+}
+
+.blackBg {
+  background-color: black;
+}
+
 .stickyWrapper {
   position: fixed;
   z-index: 111;
@@ -81,7 +83,7 @@ body {
 }
 
 .active {
-  color: #e46e51 !important; 
+  color: #e46e51 !important;
 }
 
 .inactive {
@@ -94,6 +96,7 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  top: -10px;
   /* -webkit-backface-visibility: hidden;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s; */
@@ -116,12 +119,12 @@ body {
 .DownBtnDiv {
   display: block;
   border-radius: 20px;
-  border-color: #e76f51;
-  border: 2px solid #e76f51;
-  padding: 5px 20px;
+  border-color: #f4a261;
+  border: 2px solid #f4a261;
+  padding: 6px 20px;
   position: absolute;
-  top: 16px;
-  right: 126px;
+  top: 20px;
+  right: 115px;
 }
 .DownBtnDiv:hover {
   background-color: #e76f51;
@@ -177,7 +180,6 @@ body {
   padding: 5px 35px;
 }
 
-
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .stickyWrapper {
     width: 800px;
@@ -186,16 +188,39 @@ body {
     display: block;
   }
   .collapseNavbar {
-    position: unset;
+    position: relative;
+    top: -6px;
+    left: -13px;
+    height: 347px;
+    /* position: unset; */
   }
   .navbarIcon {
     margin: 0px;
+  }
+  .transparentBg {
+    background-color: black;
+  }
+  .btnNaira {
+    position: relative;
+
+    left: -18px;
   }
 }
 
 @media only screen and (max-width: 1439px) and (min-width: 1024px) {
   .stickyWrapper {
     width: 1020px;
+  }
+  .navbarIcon {
+    margin: 10px 30px 10px 0px;
+  }
+  .DownBtnDiv {
+    position: absolute;
+    right: 35px;
+  }
+  .collapseNavbar {
+    position: absolute;
+    right: 155px;
   }
 }
 

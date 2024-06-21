@@ -225,7 +225,7 @@ function Preview() {
 
               {/* --------------------  Chapter4 Content-------------- */}
 
-              <div class={`scrollspy-example-item ${Style.dots}`} id="item-5">
+              <div class="scrollspy-example-item" id="item-5">
                 <h5 class={`${Style.introducingBook} `}>Habits</h5>
 
                 <p class={`${Style.paraText} `}>

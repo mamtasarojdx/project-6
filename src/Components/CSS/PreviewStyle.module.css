@@ -1,7 +1,7 @@
 .inside {
   color: #e9c46a;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 22px;
 }
 .PreviewGlance {
   font-weight: bolder;
@@ -61,10 +61,13 @@
   padding-left: 30px;
 }
 .paraText {
-  color: #9fa3a7;
+  color: #717275;
+    font-weight: 600;
+    font-size: 19px;
 }
 .spanText {
   color: #7d7f83;
+  font-size: 19px;
 }
 
 .blockQuote {
