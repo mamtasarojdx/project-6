@@ -223,6 +223,19 @@ body {
     right: 155px;
   }
 }
+@media only screen and (max-width: 2558px) and (min-width: 1440px) {
+  .btnNaira {
+    left: -3%;
+  }
+  .ebookIntro {
+    margin-top: 2%;
+  }
+  .DownBtnDiv{
+    position: absolute;
+    right: 147px;
+    font-size: 19px;
+  }
+}
 
 @media only screen and (min-width: 2560px) {
   .stickyWrapper {
