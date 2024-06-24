@@ -1,0 +1,25 @@
+.ui-part {
+  background-color: plum;
+  height: 48vw;
+}
+
+.ui-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 200px;
+}
+.link-first {
+  text-decoration: none;
+  margin: 10px 0;
+}
+.link-second {
+  text-decoration: none;
+  margin: 10px 0;
+}
+.link-third {
+  text-decoration: none;
+  margin: 10px 0;
+}

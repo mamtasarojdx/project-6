@@ -1,0 +1,111 @@
+.nav-tabs {
+  font-family: "Manrope", sans-serif;
+  border-bottom: none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #ebedf2;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+ul,
+ol,
+dl {
+  padding-left: 1rem;
+  font-size: 0.812rem;
+}
+.home-tab .nav-tabs .nav-item {
+  background: transparent;
+}
+ul li,
+ol li,
+dl li {
+  line-height: 1.8;
+}
+.nav-tabs .nav-item .nav-link.active {
+  background: transparent;
+  color: #1f3bb3;
+}
+.nav-tabs .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #212121;
+  padding: 12px 14px;
+  border: none;
+  border-right: 1px solid #dee2e6;
+  font-family: "Manrope", sans-serif;
+  background: transparent;
+}
+.nav-tabs .nav-item:first-child .nav-link {
+  border-radius: 4px 0 0 0;
+}
+.nav-link {
+  display: block;
+  /* padding: 0.5rem 1rem; */
+  /* color: #0d6efd; */
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-tabs .nav-item:last-child .nav-link {
+  border-radius: 0 4px 0 0;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: 1px solid #caddff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  align-items: center;
+}
+
+.statistics-details {
+  margin: 20px 0 48px 0;
+}
+.statistics-details .statistics-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8d8d8d;
+  margin-bottom: 4px;
+}
+
+.statistics-details .rate-percentage {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.statistics-details p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.statistics-details p i {
+  font-size: 12px;
+  margin: -1px 4px 0px 0px;
+}
+
+.mdi:before,
+.mdi-set {
+  display: inline-block;
+  font: normal normal normal 24px / 1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+}

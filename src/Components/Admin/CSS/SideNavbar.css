@@ -1,0 +1,169 @@
+.sidebar {
+  min-height: calc(100vh - 97px);
+  background: #f4f5f7;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  padding: 0;
+  width: 220px;
+  z-index: 11;
+  /* transition: width 0.25s ease, background 0.25s ease; */
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  /* -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease; */
+}
+.sidebar .nav:not(.sub-menu) {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.sidebar .nav {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item.active {
+  background: transparent;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item {
+  margin-top: 0.2rem;
+}
+.sidebar .nav .nav-item.active {
+  border-radius: 0px 20px 20px 0px;
+}
+ul li {
+  line-height: 1.8;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item > .nav-link {
+  margin: 0;
+}
+.sidebar .nav .nav-item.active > .nav-link {
+  background: #fff;
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+}
+.sidebar .nav .nav-item .nav-link {
+  /* display: -webkit-flex; */
+  display: flex;
+  /* -webkit-align-items: center; */
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 35px 10px 35px;
+  color: #484848;
+  border-radius: 0px 20px 20px 0px;
+  /* -webkit-transition-duration: 0.45s; */
+  -moz-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  /* transition-property: color; */
+  -webkit-transition-property: color;
+  /* font-weight: 400; */
+}
+
+.sidebar .nav:not(.sub-menu) > .nav-item {
+  margin-top: 0.2rem;
+}
+.sidebar .nav .nav-item.nav-category {
+  color: #404040;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 0 30px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item > .nav-link {
+  margin: 0;
+}
+
+.nav-link {
+  /* display: block; */
+  /* padding: 0.5rem 1rem; */
+  /* color: #0d6efd; */
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.sidebar .nav .nav-item .collapse {
+  z-index: 999;
+}
+.collapse:not(.show) {
+  display: none;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item {
+  margin-top: 0.2rem;
+}
+
+.sidebar .nav .nav-item.nav-category {
+  color: #404040;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 0 50px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+.sidebar .nav .nav-item {
+  /* -webkit-transition-duration: 0.25s; */
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  /* transition-property: background; */
+  -webkit-transition-property: background;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+  font-size: 22px;
+  line-height: 1;
+  margin-right: 1rem;
+  color: #484848;
+}
+.sidebar .nav .nav-item .nav-link i {
+  color: inherit;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon:before {
+  vertical-align: middle;
+}
+.mdi-card-text-outline::before {
+  content: "\FB54";
+}
+.mdi:before,
+.mdi-set {
+  display: inline-block;
+  font: normal normal normal 24px / 1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sidebar .nav .nav-item .nav-link .menu-title {
+  color: inherit;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.sidebar .nav .nav-item .nav-link i.menu-arrow {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: auto;
+  margin-right: -32px;
+  color: #bfccda;
+  font-family: "Material Design Icons";
+  font-style: normal;
+  display: block;
+  font-size: 0.687rem;
+  line-height: 10px;
+  /* -webkit-transition: all 0.2s ease-in; */
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}

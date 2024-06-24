@@ -4,7 +4,7 @@ body {
   font-family: sans-serif, "Roboto", "Poppins";
 }
 .heroSection {
-  background-image: url("../../Images/businessman-sitting-by-table-cafe.jpg");
+  background-image: url("../../../Images/businessman-sitting-by-table-cafe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

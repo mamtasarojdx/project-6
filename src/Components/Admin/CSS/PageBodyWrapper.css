@@ -1,0 +1,150 @@
+
+.page-body-wrapper {
+    min-height: calc(100vh - 97px);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 97px;
+  }
+  #settings-trigger {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    height: 45px;
+    width: 45px;
+    background: #1F3BB3;
+    z-index: 99;
+    /* display: -webkit-flex; */
+    display: flex;
+    /* -webkit-align-items: center; */
+    align-items: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    border-radius: 100%;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+  
+  #settings-trigger i {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .infinite-spin, #settings-trigger i {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  [class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* line-height: 1; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .ti-settings:before {
+    content: "\e60f";
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  #settings-trigger i {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  [class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .settings-panel {
+    border-left: 1px solid #dee2e6;
+    display: block;
+    position: fixed;
+    top: 97px;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
+    min-height: 100%;
+    background: #ffffff;
+    transition-duration: 0.25s;
+    transition-property: right, box-shadow;
+      z-index: 9999;
+  }
+  
+  .settings-panel .settings-close {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    color: #1F3BB3;
+    background: transparent;
+    border-radius: 4px;
+    padding: 0 3px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    z-index: 999;
+  }
+  [class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .ti-close:before {
+    content: "\e646";
+  }
+  *::before{
+    box-sizing: border-box;
+  }
+  .settings-panel .settings-close {
+    /* position: absolute;
+    top: 16px;
+    right: 10px; */
+    color: #1F3BB3;
+    cursor: pointer;
+    /* background: transparent;
+    border-radius: 4px;
+    padding: 0 3px;
+    
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    z-index: 999; */
+  }
+  [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

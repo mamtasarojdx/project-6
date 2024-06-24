@@ -5,8 +5,14 @@ import { PiTreeDuotone } from "react-icons/pi";
 import { IoCloseSharp } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
+import Home from "./Home";
+import Book from "./Book";
+import Preview from "./Preview";
+import Author from "./Author";
+import Reviews from "./Reviews";
+import Contact from "./Contact";
 
-function Header() {
+function LandingHeader() {
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [active, setActive] = useState(1);
@@ -56,7 +62,7 @@ function Header() {
     <>
       {/* --------------Navbar(header)------------ */}
       <section>
-        <div id="sticky-wrapper" class={` ${Style.stickyWrapper}`} style={{ height: "88px" }}>
+        <div id="sticky-wrapper" class={` ${Style.stickyWrapper}`} style={{ height: "88px" }} >
           <nav className={`navbar navbar-expand-lg ${Style.NavBar} ${active === 1 ? Style.transparentBg : Style.blackBg}`}>
             <div class="container">
               <a class={` ${Style.btnNaira}`} href="#">
@@ -163,7 +169,13 @@ function Header() {
           </nav>
         </div>
       </section>
+      <Home />
+      <Book />
+      <Preview />
+      <Author />
+      <Reviews/>
+      <Contact />
     </>
   );
 }
-export default Header;
+export default LandingHeader;
