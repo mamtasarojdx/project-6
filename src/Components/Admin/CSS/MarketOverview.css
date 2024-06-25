@@ -136,7 +136,7 @@
   font-size: 0.812rem;
 }
 .chartjs-size-monitor-expand {
-  position: absolute;
+  /* position: absolute;
   direction: ltr;
   left: 0;
   top: 0;
@@ -145,17 +145,17 @@
   overflow: hidden;
   pointer-events: none;
   visibility: hidden;
-  z-index: -1;
+  z-index: -1; */
 }
 .chartjs-size-monitor-expand > div {
-  position: absolute;
+  /* position: absolute;
   width: 1000000px;
   height: 1000000px;
   left: 0;
-  top: 0;
+  top: 0; */
 }
 .chartjs-size-monitor-shrink {
-  position: absolute;
+  /* position: absolute;
   direction: ltr;
   left: 0;
   top: 0;
@@ -164,17 +164,17 @@
   overflow: hidden;
   pointer-events: none;
   visibility: hidden;
-  z-index: -1;
+  z-index: -1; */
 }
 .chartjs-size-monitor-shrink > div {
-  position: absolute;
+  /* position: absolute;
   width: 200%;
   height: 200%;
   left: 0;
-  top: 0;
+  top: 0; */
 }
 .chartjs-render-monitor {
-  animation: chartjs-render-animation 1ms;
+  /* animation: chartjs-render-animation 1ms; */
 }
 
 .card .card-title.card-title-dash {
@@ -369,7 +369,7 @@ th {
 .table.select-table td .h6 {
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 5px;
@@ -396,7 +396,7 @@ th {
 .table.select-table td p {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   color: #737f8b;
   margin-bottom: 0;
@@ -439,7 +439,7 @@ th {
 }
 .badge {
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
   padding: 0.375rem 0.5625rem;
   font-weight: normal;
@@ -557,45 +557,62 @@ p {
   margin: auto;
 }
 .list-wrapper {
-    height: 100%;
-    max-height: 100%;
+  height: 100%;
+  max-height: 100%;
 }
 .list-wrapper ul {
-    padding: 0;
-    text-align: left;
-    list-style: none;
-    margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  margin-bottom: 0;
 }
 .list-wrapper ul li {
-    font-size: 0.9375rem;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #dee2e6;
+  font-size: 0.9375rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #dee2e6;
 }
 .list-wrapper ul li .form-check.w-100 {
-    max-width: 100%;
+  max-width: 100%;
 }
 .form-check .form-check-label {
-    min-height: 18px;
-    display: block;
-    /* margin-left: 1.75rem; */
-    font-size: 0.812rem;
-    line-height: 1.5;
+  min-height: 18px;
+  display: block;
+  /* margin-left: 1.75rem; */
+  font-size: 0.812rem;
+  line-height: 1.5;
 }
 
 .list-wrapper input[type="radio"] {
-    margin-left: -25px;
-    font-size: 29px;
-    height: 20px;
-    width: 17px;
-    border: 2px solid #dee2e6;
-    background-color: #dee2e6;
-    accent-color: #dee2e6;;
-     /* margin: 0px 0 0 0; */
+  margin-left: -25px;
+  font-size: 29px;
+  height: 20px;
+  width: 17px;
+  border: 2px solid #dee2e6;
+  background-color: #dee2e6;
+  accent-color: #dee2e6;
+  position: absolute;
+  /* margin: 0px 0 0 0; */
 }
-.lorem-text{
-    font-weight: 300;
+.lorem-text {
+  font-weight: 300;
+
+  
 }
 .stretch-card2 > .card {
-    width: 100%;
-    min-width: 110%;
-  }
+  width: 100%;
+  min-width: 110%;
+}
+
+.chartjs-legend ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  margin: -278px 0 0 0;
+}
+.recent-card{
+  padding: 30px 23px 105px 23px;
+}
+.leave-report{
+  margin: -28px 0 -30px 0;
+}

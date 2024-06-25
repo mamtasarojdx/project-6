@@ -1,0 +1,28 @@
+.footer {
+    background: #F4F5F7;
+    color: color(dark);
+    padding: 30px 2.45rem;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    font-size: calc(0.812rem - 0.05rem);
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  
+}
+.footer a {
+    color: #1F3BB3;
+    font-size: inherit;
+}
+@media (min-width: 576px) {
+    .d-sm-inline-block {
+        display: inline-block !important;
+    }
+}
+@media (min-width: 576px) {
+    .mt-sm-0 {
+        margin-top: 0 !important;
+    }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Content from "./Footer";
 import SideNavbar from "./SideNavbar";
 import "../CSS/PageBodyWrapper.css";
+import { CiSettings } from "react-icons/ci";
 
 function PageBodyWrapper() {
   return (
@@ -9,7 +10,7 @@ function PageBodyWrapper() {
       <div className="container-fluid page-body-wrapper">
         <div class="theme-setting-wrapper">
           <div id="settings-trigger">
-            <i class="ti-settings"></i>
+            <i class="ti-settings"><CiSettings /></i>
           </div>
         </div>
         <div id="right-sidebar" class="settings-panel">

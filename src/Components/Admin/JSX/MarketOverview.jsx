@@ -6,6 +6,8 @@ import { IoPersonAddSharp } from "react-icons/io5";
 import { IoMdCalendar } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
+import DonutChart from "./DonutChart";
+import ApexLineChart from "./ApexLineChart";
 
 
 function MarketOverview() {
@@ -371,7 +373,7 @@ function MarketOverview() {
             <div class="row flex-grow mt-4">
               <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                 <div class="card card-rounded">
-                  <div class="card-body card-rounded">
+                  <div class=" card-rounded recent-card">
                     <h4 class="card-title  card-title-dash">Recent Events</h4>
                     <div class="list align-items-center border-bottom py-2">
                       <div class="wrapper w-100">
@@ -432,7 +434,7 @@ function MarketOverview() {
               </div>
               <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                 <div class="card card-rounded">
-                  <div class="card-body">
+                  <div class="card-rounded recent-card">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <h4 class="card-title card-title-dash">Activities</h4>
                       <p class="mb-0">20 finished, 5 remaining</p>
@@ -605,13 +607,14 @@ function MarketOverview() {
                         <div class="d-flex justify-content-between align-items-center mb-3">
                           <h4 class="card-title card-title-dash">Type By Amount</h4>
                         </div>
-                        <canvas
+                        <DonutChart/>
+                        {/* <canvas
                           class="my-auto chartjs-render-monitor"
                           id="doughnutChart"
                           height="278"
                           width="418"
                           style={{ display: "block", height: "223px", width: "335px" }}
-                        ></canvas>
+                        ></canvas> */}
                         <div id="doughnut-chart-legend" class="mt-5 text-center">
                           <div class="chartjs-legend">
                             <ul class="justify-content-center">
@@ -636,7 +639,7 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
-            <div class="row flex-grow">
+            <div class="row flex-grow mt-4">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
                   <div class="card-body">
@@ -668,22 +671,23 @@ function MarketOverview() {
                             </div>
                           </div>
                         </div>
-                        <div class="mt-3">
-                          <div class="chartjs-size-monitor">
+                        <div class="leave-report">
+                          {/* <div class="chartjs-size-monitor">
                             <div class="chartjs-size-monitor-expand">
                               <div class=""></div>
                             </div>
                             <div class="chartjs-size-monitor-shrink">
                               <div class=""></div>
                             </div>
-                          </div>
-                          <canvas
+                          </div> */}
+                          <ApexLineChart/>
+                          {/* <canvas
                             id="leaveReport"
                             width="418"
                             height="187"
                             style={{ display: "block", height: "150px", width: "335px" }}
                             class="chartjs-render-monitor"
-                          ></canvas>
+                          ></canvas> */}
                         </div>
                       </div>
                     </div>
@@ -691,7 +695,7 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
-            <div class="row flex-grow">
+            <div class="row flex-grow mt-4 mb-5">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
                   <div class="card-body">

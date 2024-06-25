@@ -1,6 +1,7 @@
 import React from "react";
 import Rating from "./Rating";
 import MarketOverview from "./MarketOverview";
+import "../CSS/Footer.css";
 
 function Footer() {
   return (

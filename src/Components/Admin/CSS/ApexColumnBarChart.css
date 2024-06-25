@@ -1,3 +1,12 @@
 #Dashboard_apexGraph__KVQbi {
     /* position: inherit !important; */
 }
+
+.DonutChart{
+    position: relative;
+    cursor: default;
+    width: 500px;
+    height: 500px;
+    left: -112px;
+    top: -132px;
+}
