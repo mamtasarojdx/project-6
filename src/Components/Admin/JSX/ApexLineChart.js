@@ -30,7 +30,10 @@ const ApexLineChart = () => {
           columnWidth: "50%", // Adjust the width of the bars
         },
       },
-      colors: ["#52CDFF", "#1F3BB3"], // Define colors for series
+      dataLabels: {
+        enabled: false, //Disable data labels inside bars
+      },
+
       xaxis: {
         categories: ["JAN", "FEB", "MAR", "APR", "MAY"],
         axisBorder: {
@@ -88,9 +91,3 @@ const ApexLineChart = () => {
 };
 
 export default ApexLineChart;
-
-
-
-
-
-

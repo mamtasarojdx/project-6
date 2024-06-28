@@ -12,7 +12,7 @@ const DonutChart = () => {
   ];
 
   return (
-    <div style={{ textAlign: "center", margin: "auto 10%" }}>
+    <div style={{ textAlign: "center", margin: "auto" }}>
       <PieChart width={500} height={500} className="DonutChart">
         <Tooltip />
         <Pie
@@ -21,7 +21,6 @@ const DonutChart = () => {
           outerRadius={110}
           innerRadius={50}
           fill="#1F3BB3" // Total
-          label={({ name, students }) => `${name}: ${students}`}
         />
         <Pie
           data={data}

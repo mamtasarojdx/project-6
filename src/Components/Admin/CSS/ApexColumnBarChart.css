@@ -1,12 +1,25 @@
 #Dashboard_apexGraph__KVQbi {
-    /* position: inherit !important; */
+  /* position: inherit !important; */
 }
 
-.DonutChart{
-    position: relative;
-    cursor: default;
-    width: 500px;
-    height: 500px;
-    left: -112px;
-    top: -132px;
+.DonutChart {
+  position: relative;
+  cursor: default;
+  width: 500px;
+  height: 500px;
+  left: -94px;
+  top: -132px;
+}
+
+.apexChart {
+  animation: chartjs-render-animation 1ms;
+}
+@keyframes chartjs-render-animation {
+  0% {
+    opacity: 0.99;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

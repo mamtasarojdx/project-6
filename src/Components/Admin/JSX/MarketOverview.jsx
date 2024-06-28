@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import DonutChart from "./DonutChart";
 import ApexLineChart from "./ApexLineChart";
-
+import { CiFlag1 } from "react-icons/ci";
 
 function MarketOverview() {
   return (
@@ -16,6 +16,7 @@ function MarketOverview() {
       <div className="container">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column">
+            {/* ------------Market Overview------------ */}
             <div class="row flex-grow">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
@@ -36,8 +37,7 @@ function MarketOverview() {
                             aria-expanded="false"
                           >
                             {" "}
-                            This month{" "}
-                            <MdKeyboardArrowDown />
+                            This month <MdKeyboardArrowDown />
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                             <h6 class="dropdown-header">Settings</h6>
@@ -56,7 +56,6 @@ function MarketOverview() {
                             </a>
                           </div>
                         </div>
-                       
                       </div>
                     </div>
                     <div class="d-sm-flex align-items-center mt-1 justify-content-between">
@@ -65,9 +64,12 @@ function MarketOverview() {
                         <h4 class="me-2">USD</h4>
                         <h4 class="text-success">(+1.37%)</h4>
                       </div>
+                    </div>
+
+                    <div class="chartjs-bar-wrapper mt-3">
                       <div class="me-3">
                         <div id="marketing-overview-legend">
-                          <div class="chartjs-legend">
+                          <div class="last-week">
                             <ul>
                               <li class="text-muted text-small">
                                 <span style={{ backgroundColor: "#52CDFF" }}></span>Last week
@@ -78,31 +80,14 @@ function MarketOverview() {
                             </ul>
                           </div>
                         </div>
+                        <ApexColumnBarChart />
                       </div>
-                    </div>
-                    <div class="chartjs-bar-wrapper mt-3">
-                   
-                      {/* <div class="chartjs-size-monitor">
-                        <div class="chartjs-size-monitor-expand">
-                          <div class=""></div>
-                        </div>
-                        <div class="chartjs-size-monitor-shrink">
-                          <div class=""> </div>
-                        </div>
-                      </div> */}
-                      <ApexColumnBarChart/>
-                      {/* <canvas
-                        id="marketingOverview"
-                        width="933"
-                        height="187"
-                        style={{ display: "block", height: "150px", width: "747px" }}
-                        class="chartjs-render-monitor"
-                      ></canvas> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* ------------Pending Requests------------ */}
             <div class="row flex-grow mt-4">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
@@ -114,7 +99,10 @@ function MarketOverview() {
                       </div>
                       <div>
                         <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button">
-                          <i class="mdi mdi-account-plus"><IoPersonAddSharp /></i>Add new member
+                          <i class="mdi mdi-account-plus">
+                            <IoPersonAddSharp />
+                          </i>
+                          Add new member
                         </button>
                       </div>
                     </div>
@@ -370,6 +358,7 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
+            {/* ------------Recent Events------------ */}
             <div class="row flex-grow mt-4">
               <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                 <div class="card card-rounded">
@@ -380,7 +369,9 @@ function MarketOverview() {
                         <p class="mb-2 font-weight-medium">Change in Directors</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="d-flex align-items-center">
-                            <i class="mdi mdi-calendar text-muted me-1"><IoMdCalendar /></i>
+                            <i class="mdi mdi-calendar text-muted me-1">
+                              <IoMdCalendar />
+                            </i>
                             <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
                           </div>
                         </div>
@@ -391,7 +382,9 @@ function MarketOverview() {
                         <p class="mb-2 font-weight-medium">Other Events</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="d-flex align-items-center">
-                            <i class="mdi mdi-calendar text-muted me-1"><IoMdCalendar /></i>
+                            <i class="mdi mdi-calendar text-muted me-1">
+                              <IoMdCalendar />
+                            </i>
                             <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
                           </div>
                         </div>
@@ -402,7 +395,9 @@ function MarketOverview() {
                         <p class="mb-2 font-weight-medium">Quarterly Report</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="d-flex align-items-center">
-                            <i class="mdi mdi-calendar text-muted me-1"><IoMdCalendar /></i>
+                            <i class="mdi mdi-calendar text-muted me-1">
+                              <IoMdCalendar />
+                            </i>
                             <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
                           </div>
                         </div>
@@ -413,7 +408,9 @@ function MarketOverview() {
                         <p class="mb-2 font-weight-medium">Change in Directors</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="d-flex align-items-center">
-                            <i class="mdi mdi-calendar text-muted me-1"><IoMdCalendar /></i>
+                            <i class="mdi mdi-calendar text-muted me-1">
+                              <IoMdCalendar />
+                            </i>
                             <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
                           </div>
                         </div>
@@ -424,7 +421,10 @@ function MarketOverview() {
                       <div class="wrapper w-100">
                         <p class="mb-0">
                           <a href="#" class="fw-bold text-primary">
-                            Show all <i class="mdi mdi-arrow-right ms-2"><FaArrowRight /></i>
+                            Show all{" "}
+                            <i class="mdi mdi-arrow-right ms-2">
+                              <FaArrowRight />
+                            </i>
                           </a>
                         </p>
                       </div>
@@ -432,6 +432,7 @@ function MarketOverview() {
                   </div>
                 </div>
               </div>
+              {/* ------------Activities------------ */}
               <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                 <div class="card card-rounded">
                   <div class="card-rounded recent-card">
@@ -501,7 +502,10 @@ function MarketOverview() {
                       <div class="wrapper w-100">
                         <p class="mb-0">
                           <a href="#" class="fw-bold text-primary">
-                            Show all <i class="mdi mdi-arrow-right ms-2"><FaArrowRight /></i>
+                            Show all{" "}
+                            <i class="mdi mdi-arrow-right ms-2">
+                              <FaArrowRight />
+                            </i>
                           </a>
                         </p>
                       </div>
@@ -512,6 +516,7 @@ function MarketOverview() {
             </div>
           </div>
           <div class="col-lg-4 d-flex flex-column">
+            {/* ------------Todo list------------ */}
             <div class="row flex-grow">
               <div class="col-12 grid-margin stretch-card2">
                 <div class="card card-rounded2">
@@ -521,9 +526,10 @@ function MarketOverview() {
                         <div class="d-flex justify-content-between align-items-center">
                           <h4 class="card-title card-title-dash">Todo list</h4>
                           <div class="add-items d-flex mb-0">
-                            {/* <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?" /> */}
                             <button class="add btn btn-icons btn-rounded btn-primary todo-list-add-btn text-white me-0 pl-12p">
-                              <i class="mdi mdi-plus"><FaPlus /></i>
+                              <i class="mdi mdi-plus">
+                                <FaPlus />
+                              </i>
                             </button>
                           </div>
                         </div>
@@ -539,14 +545,16 @@ function MarketOverview() {
                                 <div class="d-flex mt-2">
                                   <div class="ps-4 text-small me-3">24 June 2020</div>
                                   <div class="badge badge-opacity-warning me-3">Due tomorrow</div>
-                                  <i class="mdi mdi-flag ms-2 flag-color"></i>
+                                  <i class="mdi mdi-flag ms-2 flag-color">
+                                    <CiFlag1 />
+                                  </i>
                                 </div>
                               </div>
                             </li>
                             <li class="d-block">
                               <div class="form-check w-100">
                                 <label class="form-check-label">
-                                  <input class="checkbox" type="radio" />  <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
+                                  <input class="checkbox" type="radio" /> <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
                                   <i class="input-helper rounded"></i>
                                   <i class="input-helper"></i>
                                 </label>
@@ -559,7 +567,7 @@ function MarketOverview() {
                             <li>
                               <div class="form-check w-100">
                                 <label class="form-check-label">
-                                  <input class="checkbox" type="radio" />  <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
+                                  <input class="checkbox" type="radio" /> <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
                                   <i class="input-helper rounded"></i>
                                   <i class="input-helper"></i>
                                 </label>
@@ -572,7 +580,7 @@ function MarketOverview() {
                             <li class="border-bottom-0">
                               <div class="form-check w-100">
                                 <label class="form-check-label">
-                                  <input class="checkbox" type="radio" />  <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
+                                  <input class="checkbox" type="radio" /> <span className="lorem-text">Lorem Ipsum is simply dummy text of the printing</span>{" "}
                                   <i class="input-helper rounded"></i>
                                   <i class="input-helper"></i>
                                 </label>
@@ -590,31 +598,19 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
+            {/* ------------Type By Amount------------ */}
             <div class="row flex-grow mt-4">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="chartjs-size-monitor">
-                          <div class="chartjs-size-monitor-expand">
-                            <div class=""></div>
-                          </div>
-                          <div class="chartjs-size-monitor-shrink">
-                            <div class=""></div>
-                          </div>
-                        </div>
                         <div class="d-flex justify-content-between align-items-center mb-3">
                           <h4 class="card-title card-title-dash">Type By Amount</h4>
                         </div>
-                        <DonutChart/>
-                        {/* <canvas
-                          class="my-auto chartjs-render-monitor"
-                          id="doughnutChart"
-                          height="278"
-                          width="418"
-                          style={{ display: "block", height: "223px", width: "335px" }}
-                        ></canvas> */}
+
+                        {/* <DonutChart /> */}
+
                         <div id="doughnut-chart-legend" class="mt-5 text-center">
                           <div class="chartjs-legend">
                             <ul class="justify-content-center">
@@ -639,6 +635,7 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
+            {/* ------------Leave Report------------ */}
             <div class="row flex-grow mt-4">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
@@ -672,22 +669,7 @@ function MarketOverview() {
                           </div>
                         </div>
                         <div class="leave-report">
-                          {/* <div class="chartjs-size-monitor">
-                            <div class="chartjs-size-monitor-expand">
-                              <div class=""></div>
-                            </div>
-                            <div class="chartjs-size-monitor-shrink">
-                              <div class=""></div>
-                            </div>
-                          </div> */}
-                          <ApexLineChart/>
-                          {/* <canvas
-                            id="leaveReport"
-                            width="418"
-                            height="187"
-                            style={{ display: "block", height: "150px", width: "335px" }}
-                            class="chartjs-render-monitor"
-                          ></canvas> */}
+                          <ApexLineChart />
                         </div>
                       </div>
                     </div>
@@ -695,6 +677,7 @@ function MarketOverview() {
                 </div>
               </div>
             </div>
+            {/* ------------Top Performer------------ */}
             <div class="row flex-grow mt-4 mb-5">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card card-rounded">
@@ -709,7 +692,11 @@ function MarketOverview() {
                         <div class="mt-3">
                           <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                             <div class="d-flex">
-                              <img class="img-sm rounded-10" src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face1.jpg" alt="profile" />
+                              <img
+                                class="img-sm rounded-10"
+                                src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face1.jpg"
+                                alt="profile"
+                              />
                               <div class="wrapper ms-3">
                                 <p class="ms-1 mb-1 fw-bold">Brandon Washington</p>
                                 <small class="text-muted mb-0">162543</small>
@@ -719,7 +706,11 @@ function MarketOverview() {
                           </div>
                           <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                             <div class="d-flex">
-                              <img class="img-sm rounded-10" src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face2.jpg" alt="profile" />
+                              <img
+                                class="img-sm rounded-10"
+                                src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face2.jpg"
+                                alt="profile"
+                              />
                               <div class="wrapper ms-3">
                                 <p class="ms-1 mb-1 fw-bold">Wayne Murphy</p>
                                 <small class="text-muted mb-0">162543</small>
@@ -729,7 +720,11 @@ function MarketOverview() {
                           </div>
                           <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                             <div class="d-flex">
-                              <img class="img-sm rounded-10" src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face3.jpg" alt="profile" />
+                              <img
+                                class="img-sm rounded-10"
+                                src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face3.jpg"
+                                alt="profile"
+                              />
                               <div class="wrapper ms-3">
                                 <p class="ms-1 mb-1 fw-bold">Katherine Butler</p>
                                 <small class="text-muted mb-0">162543</small>
@@ -739,7 +734,11 @@ function MarketOverview() {
                           </div>
                           <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                             <div class="d-flex">
-                              <img class="img-sm rounded-10" src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face4.jpg" alt="profile" />
+                              <img
+                                class="img-sm rounded-10"
+                                src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face4.jpg"
+                                alt="profile"
+                              />
                               <div class="wrapper ms-3">
                                 <p class="ms-1 mb-1 fw-bold">Matthew Bailey</p>
                                 <small class="text-muted mb-0">162543</small>
@@ -749,7 +748,11 @@ function MarketOverview() {
                           </div>
                           <div class="wrapper d-flex align-items-center justify-content-between pt-2">
                             <div class="d-flex">
-                              <img class="img-sm rounded-10" src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face5.jpg" alt="profile" />
+                              <img
+                                class="img-sm rounded-10"
+                                src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face5.jpg"
+                                alt="profile"
+                              />
                               <div class="wrapper ms-3">
                                 <p class="ms-1 mb-1 fw-bold">Rafell John</p>
                                 <small class="text-muted mb-0">Alaska, USA</small>

@@ -1,9 +1,21 @@
 import React from "react";
 import "../CSS/AdminHeader.css";
 import { IoIosMenu } from "react-icons/io";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import PageBodyWrapper from "./PageBodyWrapper";
+import { IoChevronDownOutline } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
+import { MdMailOutline } from "react-icons/md";
+import { CiBellOn } from "react-icons/ci";
+import { RiAlertFill } from "react-icons/ri";
+import { IoSettingsSharp } from "react-icons/io5";
+import { TbAirBalloon } from "react-icons/tb";
+import { MdOutlineMessage } from "react-icons/md";
+import { FaRegCalendarCheck } from "react-icons/fa";
+import { FiHelpCircle } from "react-icons/fi";
+import { IoPowerSharp } from "react-icons/io5";
+import SideNavbar from "./SideNavbar";
 
 function AdminHeader() {
   return (
@@ -51,7 +63,10 @@ function AdminHeader() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Select Category {/* <RiArrowDropDownLine style={{ fontSize: "30px" }} />  */}
+                <span className="select-text">Select Category </span>
+                <i class="down-icon">
+                  <IoChevronDownOutline />
+                </i>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
                 <a class="dropdown-item py-3">
@@ -101,7 +116,9 @@ function AdminHeader() {
             {/* ---------------search bar------------ */}
             <li class="nav-item">
               <form class="search-form" action="#">
-                <i class="icon-search"></i>
+                <i class="icon-search">
+                  <IoSearch />
+                </i>
                 <input type="search" class="form-control" placeholder="Search Here" title="Search here" />
               </form>
             </li>
@@ -109,7 +126,9 @@ function AdminHeader() {
             {/* -----------------mail icon--------------- */}
             <li class="nav-item dropdown">
               <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-                <i class="icon-mail icon-lg"></i>
+                <i class="icon-mail icon-lg">
+                  <MdMailOutline />
+                </i>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
                 <a class="dropdown-item py-3 border-bottom">
@@ -118,7 +137,9 @@ function AdminHeader() {
                 </a>
                 <a class="dropdown-item preview-item py-3">
                   <div class="preview-thumbnail">
-                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                    <i class="mdi mdi-alert m-auto text-primary">
+                      <RiAlertFill />
+                    </i>
                   </div>
                   <div class="preview-item-content">
                     <h6 class="preview-subject fw-normal text-dark mb-1">Application Error</h6>
@@ -127,7 +148,9 @@ function AdminHeader() {
                 </a>
                 <a class="dropdown-item preview-item py-3">
                   <div class="preview-thumbnail">
-                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                    <i class="mdi mdi-settings m-auto text-primary">
+                      <IoSettingsSharp />
+                    </i>
                   </div>
                   <div class="preview-item-content">
                     <h6 class="preview-subject fw-normal text-dark mb-1">Settings</h6>
@@ -136,7 +159,9 @@ function AdminHeader() {
                 </a>
                 <a class="dropdown-item preview-item py-3">
                   <div class="preview-thumbnail">
-                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                    <i class="mdi mdi-airballoon m-auto text-primary">
+                      <TbAirBalloon />
+                    </i>
                   </div>
                   <div class="preview-item-content">
                     <h6 class="preview-subject fw-normal text-dark mb-1">New user registration</h6>
@@ -149,7 +174,9 @@ function AdminHeader() {
             {/* -----------------------bell icon-------------- */}
             <li class="nav-item dropdown">
               <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="icon-bell"></i>
+                <i class="icon-bell">
+                  <CiBellOn />
+                </i>
                 <span class="count"></span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
@@ -160,7 +187,7 @@ function AdminHeader() {
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic" />
+                    <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face10.jpg" alt="image" class="img-sm profile-pic" />
                   </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
@@ -169,7 +196,7 @@ function AdminHeader() {
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic" />
+                    <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face12.jpg" alt="image" class="img-sm profile-pic" />
                   </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
@@ -178,7 +205,7 @@ function AdminHeader() {
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic" />
+                    <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face1.jpg" alt="image" class="img-sm profile-pic" />
                   </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
@@ -195,34 +222,56 @@ function AdminHeader() {
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image" />
+                  <img
+                    class="img-md rounded-circle"
+                    src="https://demo.bootstrapdash.com/star-admin2-free/template/images/faces/face8.jpg"
+                    alt="Profile image"
+                  />
                   <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                   <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
                 </div>
                 <a class="dropdown-item">
-                  <i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span>
+                  <i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2">
+                    <FaRegUser />
+                  </i>{" "}
+                  My Profile <span class="badge badge-pill badge-danger">1</span>
                 </a>
                 <a class="dropdown-item">
-                  <i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages
+                  <i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2">
+                    <MdOutlineMessage />
+                  </i>{" "}
+                  Messages
                 </a>
                 <a class="dropdown-item">
-                  <i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity
+                  <i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2">
+                    <FaRegCalendarCheck />
+                  </i>{" "}
+                  Activity
                 </a>
                 <a class="dropdown-item">
-                  <i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ
+                  <i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2">
+                    <FiHelpCircle />
+                  </i>{" "}
+                  FAQ
                 </a>
                 <a class="dropdown-item">
-                  <i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out
+                  <i class="dropdown-item-icon mdi mdi-power text-primary me-2">
+                    <IoPowerSharp />
+                  </i>
+                  Sign Out
                 </a>
               </div>
             </li>
           </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
-            <span class="mdi mdi-menu"></span>
+            <span class="mdi mdi-menu">
+              {" "}
+              <IoIosMenu />
+            </span>
           </button>
         </div>
       </nav>
-      <PageBodyWrapper/>
+      <PageBodyWrapper />
     </>
   );
 }

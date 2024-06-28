@@ -109,3 +109,36 @@ dl li {
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
 }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .home-tab .btn {
+    padding: 4px 16px 7px 7px;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 425px) {
+  .home-tab .btn {
+    padding: 4px 16px 7px 7px;
+  }
+  .home-tab .nav-tabs .nav-item .nav-link {
+    padding: 5px 12px 5px 0px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 424px) and (min-width: 375px) {
+  .home-tab .btn {
+    padding: 4px 16px 7px 7px;
+  }
+  .home-tab .nav-tabs .nav-item .nav-link {
+    padding: 5px 12px 5px 0px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 374px) and (min-width: 320px) {
+  .home-tab .btn {
+    padding: 4px 16px 7px 7px;
+  }
+  .home-tab .nav-tabs .nav-item .nav-link {
+    padding: 5px 4px;
+    margin-bottom: 15px;
+  }
+}

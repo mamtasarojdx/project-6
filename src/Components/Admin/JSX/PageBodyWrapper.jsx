@@ -1,18 +1,51 @@
 import React from "react";
-import Content from "./Footer";
 import SideNavbar from "./SideNavbar";
 import "../CSS/PageBodyWrapper.css";
 import { CiSettings } from "react-icons/ci";
 
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
+import MainPanel from "./MainPanel";
+
 function PageBodyWrapper() {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+
+  const toggleSettingsPanel = () => {
+    setSettingsOpen(!settingsOpen);
+  };
   return (
     <>
       <div className="container-fluid page-body-wrapper">
-        <div class="theme-setting-wrapper">
+        {/* ------------------Setting Icon---------------- */}
+        <div className="theme-setting-wrapper" onClick={toggleSettingsPanel}>
           <div id="settings-trigger">
-            <i class="ti-settings"><CiSettings /></i>
+            <i className="ti-settings">
+              <CiSettings />
+            </i>
+          </div>
+          <div id="theme-settings" className={`settings-panel ${settingsOpen ? "open" : ""}`}>
+            <i className="settings-close ti-close" onClick={toggleSettingsPanel}>
+              <IoMdClose />
+            </i>
+            <p className="settings-heading">SIDEBAR SKINS</p>
+            <div className="sidebar-bg-options selected" id="sidebar-light-theme">
+              <div className="img-ss rounded-circle bg-light border me-3"></div>Light
+            </div>
+            <div className="sidebar-bg-options" id="sidebar-dark-theme">
+              <div className="img-ss rounded-circle bg-dark border me-3"></div>Dark
+            </div>
+            <p className="settings-heading mt-2">HEADER SKINS</p>
+            <div className="color-tiles mx-0 px-4">
+              <div className="tiles success"></div>
+              <div className="tiles warning"></div>
+              <div className="tiles danger"></div>
+              <div className="tiles info"></div>
+              <div className="tiles dark"></div>
+              <div className="tiles default"></div>
+            </div>
           </div>
         </div>
+        {/* --------------------Right Sidebar------------- */}
         <div id="right-sidebar" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -197,8 +230,9 @@ function PageBodyWrapper() {
             </div>
           </div>
         </div>
+
         <SideNavbar />
-        <Content/>
+        <MainPanel />
       </div>
     </>
   );

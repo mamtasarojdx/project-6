@@ -167,3 +167,22 @@ ul li {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+@media screen and (max-width: 991px) {
+  .sidebar-offcanvas.active {
+    right: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidebar-offcanvas {
+    position: fixed;
+    max-height: calc(100vh - 97px);
+    top: 97px;
+    bottom: 0;
+    overflow: auto;
+    right: -220px;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+}
