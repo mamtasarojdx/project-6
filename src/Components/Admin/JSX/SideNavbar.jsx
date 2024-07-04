@@ -13,7 +13,7 @@ import "../CSS/SideNavbar.css";
 function SideNavbar() {
   return (
     <>
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav class="sidebar sidebar-offcanvas active" id="sidebar">
         <ul class="nav">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">

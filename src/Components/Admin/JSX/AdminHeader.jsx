@@ -21,9 +21,9 @@ function AdminHeader() {
   return (
     <>
       {/* ----------------menu icon--------------- */}
-      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row navbar-1">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-          <div class="me-3">
+          <div class="me-3 menu-icon1">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
               <span class="icon-menu">
                 <IoIosMenu />
@@ -37,7 +37,7 @@ function AdminHeader() {
               <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/logo.svg" alt="logo" />
             </a>
             <a class="navbar-brand brand-logo-mini" href="index.html">
-              {/* <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/logo-mini.svg" alt="logo" /> */}
+              <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/logo-mini.svg" alt="logo" className="admin-logo-img" />
             </a>
           </div>
         </div>
@@ -263,14 +263,15 @@ function AdminHeader() {
               </div>
             </li>
           </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
-            <span class="mdi mdi-menu">
-              {" "}
+
+          <div class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            <span class="icon-menu">
               <IoIosMenu />
             </span>
-          </button>
+          </div>
         </div>
       </nav>
+
       <PageBodyWrapper />
     </>
   );

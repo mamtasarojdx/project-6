@@ -35,7 +35,7 @@ const ApexLineChart = () => {
       },
 
       xaxis: {
-        categories: ["JAN", "FEB", "MAR", "APR", "MAY"],
+        categories: ["Jan", "Feb", "Mar", "Apr", "May"],
         axisBorder: {
           show: false, // Hide x-axis horizontal line
         },

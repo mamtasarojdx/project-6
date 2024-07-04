@@ -24,7 +24,7 @@ function MarketOverview() {
                     <div class="d-sm-flex justify-content-between align-items-start">
                       <div>
                         <h4 class="card-title card-title-dash">Market Overview</h4>
-                        <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p class="card-subtitle card-subtitle-dash market-overviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                       </div>
                       <div>
                         <div class="dropdown">
@@ -359,8 +359,8 @@ function MarketOverview() {
               </div>
             </div>
             {/* ------------Recent Events------------ */}
-            <div class="row flex-grow mt-4">
-              <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+            <div class="row flex-grow mb-4">
+              <div class="col-md-6 col-lg-6 grid-margin stretch-card1 mt-4 ">
                 <div class="card card-rounded">
                   <div class=" card-rounded recent-card">
                     <h4 class="card-title  card-title-dash">Recent Events</h4>
@@ -418,7 +418,7 @@ function MarketOverview() {
                     </div>
 
                     <div class="list align-items-center pt-3">
-                      <div class="wrapper w-100">
+                      <div class="wrapper w-100 mb-2">
                         <p class="mb-0">
                           <a href="#" class="fw-bold text-primary">
                             Show all{" "}
@@ -433,9 +433,9 @@ function MarketOverview() {
                 </div>
               </div>
               {/* ------------Activities------------ */}
-              <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+              <div class="col-md-6 col-lg-6 grid-margin stretch-card2 mt-4 ">
                 <div class="card card-rounded">
-                  <div class="card-rounded recent-card">
+                  <div class="card-rounded activity-card">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                       <h4 class="card-title card-title-dash">Activities</h4>
                       <p class="mb-0">20 finished, 5 remaining</p>
@@ -518,8 +518,8 @@ function MarketOverview() {
           <div class="col-lg-4 d-flex flex-column">
             {/* ------------Todo list------------ */}
             <div class="row flex-grow">
-              <div class="col-12 grid-margin stretch-card2">
-                <div class="card card-rounded2">
+              <div class="col-12 grid-margin todo-card">
+                <div class="card card-rounded ">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-lg-12">
@@ -600,7 +600,7 @@ function MarketOverview() {
             </div>
             {/* ------------Type By Amount------------ */}
             <div class="row flex-grow mt-4">
-              <div class="col-12 grid-margin stretch-card">
+              <div class="col-12 grid-margin todo-card">
                 <div class="card card-rounded">
                   <div class="card-body">
                     <div class="row">
@@ -609,9 +609,9 @@ function MarketOverview() {
                           <h4 class="card-title card-title-dash">Type By Amount</h4>
                         </div>
 
-                        {/* <DonutChart /> */}
+                        <DonutChart />
 
-                        <div id="doughnut-chart-legend" class="mt-5 text-center">
+                        <div id="doughnut-chart-legend" class="doughnut-chart text-center">
                           <div class="chartjs-legend">
                             <ul class="justify-content-center">
                               <li>
@@ -637,7 +637,7 @@ function MarketOverview() {
             </div>
             {/* ------------Leave Report------------ */}
             <div class="row flex-grow mt-4">
-              <div class="col-12 grid-margin stretch-card">
+              <div class="col-12 grid-margin todo-card">
                 <div class="card card-rounded">
                   <div class="card-body">
                     <div class="row">
@@ -679,7 +679,7 @@ function MarketOverview() {
             </div>
             {/* ------------Top Performer------------ */}
             <div class="row flex-grow mt-4 mb-5">
-              <div class="col-12 grid-margin stretch-card">
+              <div class="col-12 grid-margin Performer-card">
                 <div class="card card-rounded">
                   <div class="card-body">
                     <div class="row">
