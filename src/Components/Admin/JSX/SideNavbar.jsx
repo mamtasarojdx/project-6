@@ -8,12 +8,12 @@ import { TbIconsOff } from "react-icons/tb";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 import { FaAngleRight } from "react-icons/fa";
-
 import "../CSS/SideNavbar.css";
-function SideNavbar() {
+
+function SideNavbar({ isOpen }) {
   return (
     <>
-      <nav class="sidebar sidebar-offcanvas active" id="sidebar">
+      <nav className={isOpen ? "sidebar sidebar-offcanvas active" : "sidebar sidebar-offcanvas"} id="sidebar">
         <ul class="nav">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">

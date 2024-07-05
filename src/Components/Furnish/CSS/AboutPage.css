@@ -1,0 +1,40 @@
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.ftco-section {
+  padding: 8em 0;
+  position: relative;
+  width: 100%;
+  margin: -130px 0;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"] {
+  transition-duration: 1s;
+}
+.heading-section .subheading {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.heading-section h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+a,
+button {
+  /* -webkit-transition: .3s all ease; */
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #cf7500;
+  text-decoration: none;
+}

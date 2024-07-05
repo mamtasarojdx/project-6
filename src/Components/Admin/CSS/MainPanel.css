@@ -16,29 +16,48 @@
   font-size: inherit;
 }
 .home-tab {
-  margin-top: 5px;
+  margin: 95px 0 0 -20px;
 }
+.main-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (max-width: 991px) {
   .main-panel {
     margin-left: 0;
     width: 100%;
   }
+  .home-tab {
+    margin: 100px 0 0 0;
+  }
 }
 
 @media (max-width: 325px) {
   .content-wrapper {
-    /* padding: 0 1.5rem 1.5rem 1.5rem; */
     padding: 0 12px 24px 0px;
   }
 }
-@media only screen and (max-width: 766px) and (min-width: 375px) {
+@media (max-width: 423px) {
   .content-wrapper {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 12px 24px 0px;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 425px) {
+  .content-wrapper {
+    padding: 0 12px 24px 0px;
   }
 }
 
 @media only screen and (max-width: 1439px) and (min-width: 1024px) {
   .home-tab {
-    margin: 25px 0 0 -23px;
+    margin: 125px 0 0 -23px;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1440px) {
+  .home-tab {
+    margin: 95px 0 0 -20px;
+    width: 98%;
   }
 }

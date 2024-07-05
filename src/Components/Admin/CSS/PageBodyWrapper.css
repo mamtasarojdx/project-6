@@ -1,5 +1,5 @@
 .page-body-wrapper {
-  min-height: calc(100vh - 97px);
+  /* min-height: calc(100vh - 97px); */
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -240,11 +240,9 @@
 }
 
 .settings-panel.open {
-  right: 0; /* Slide in when open */
+  right: 0;
 }
 
-@media only screen and (max-width: 1439px) and (min-width: 1024px) {
-}
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .theme-setting-wrapper {
     display: none;

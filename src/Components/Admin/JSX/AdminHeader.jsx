@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/AdminHeader.css";
 import { IoIosMenu } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
@@ -18,6 +18,12 @@ import { IoPowerSharp } from "react-icons/io5";
 import SideNavbar from "./SideNavbar";
 
 function AdminHeader() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <>
       {/* ----------------menu icon--------------- */}
@@ -264,14 +270,14 @@ function AdminHeader() {
             </li>
           </ul>
 
-          <div class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+          <div className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" onClick={toggleSidebar}>
             <span class="icon-menu">
               <IoIosMenu />
             </span>
           </div>
         </div>
-      </nav>
-
+      </nav>{" "}
+      <SideNavbar isOpen={isSidebarOpen} />
       <PageBodyWrapper />
     </>
   );

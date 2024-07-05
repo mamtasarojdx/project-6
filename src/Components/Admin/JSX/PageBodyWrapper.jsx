@@ -231,7 +231,6 @@ function PageBodyWrapper() {
           </div>
         </div>
 
-        <SideNavbar />
         <MainPanel />
       </div>
     </>

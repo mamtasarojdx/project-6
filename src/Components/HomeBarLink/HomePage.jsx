@@ -9,13 +9,26 @@ function HomePage() {
         <div className="row">
           <div className="col-lg-12 ui-link">
             <li className="link-first">
-              <Link to="/landing">Go to 1st UI</Link>
+              <Link to="/landing" className="text-head">
+                Go to 1st UI
+              </Link>
             </li>
             <li className="link-second">
-              <Link to="/login">Go to 2nd UI</Link>
+              <Link to="/login" className="text-head">
+                Go to 2nd UI
+              </Link>
             </li>
             <li className="link-third">
-              <Link to="/admin"> Go to 3rd UI</Link>
+              <Link to="/admin" className="text-head">
+                {" "}
+                Go to 3rd UI
+              </Link>
+            </li>
+            <li className="link-fourth">
+              <Link to="/furnish" className="text-head">
+                {" "}
+                Go to 4th UI
+              </Link>
             </li>
           </div>
         </div>

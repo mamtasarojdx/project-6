@@ -1,5 +1,5 @@
 .ui-part {
-  background-color: plum;
+  background-color: #3b71ca;
   height: 48vw;
 }
 
@@ -14,12 +14,24 @@
 .link-first {
   text-decoration: none;
   margin: 10px 0;
+  color: #e4e9f0;
+  
 }
 .link-second {
   text-decoration: none;
   margin: 10px 0;
+  color: #e4e9f0;
 }
 .link-third {
   text-decoration: none;
   margin: 10px 0;
+  color: #e4e9f0;
+}
+.link-fourth {
+  text-decoration: none;
+  margin: 10px 0;
+  color: #e4e9f0;
+}
+.text-head{
+color: #e4e9f0;
 }

@@ -32,7 +32,6 @@
 }
 .card-body {
   flex: 1 1 auto;
-  /* padding: 1rem 1rem; */
 }
 .card .card-title.card-title-dash {
   font-style: normal;
@@ -224,39 +223,23 @@ th {
 .table thead th {
   border-top: 0;
   border-bottom-width: 1px;
-  /* font-weight: 600;
-    font-size: .875rem; */
 }
 .table th,
 .table td {
   vertical-align: middle;
-  /* line-height: 1; */
   white-space: nowrap;
   padding: 1.125rem 1.375rem;
 }
 
-.form-check .form-check-label input {
-  /* position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    margin-top: 0;
-    z-index: 1;
-    cursor: pointer;
-    opacity: 0; */
-  /* filter: alpha(opacity = 0); */
-}
 .form-check-input[type="checkbox"] {
   border-radius: 0.25em;
 }
 .form-check .form-check-input {
   float: left;
-  /* margin-left: -1.5em; */
 }
 .form-check-input {
   width: 1em;
   height: 1em;
-  /* margin-top: 0.25em; */
   vertical-align: top;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -264,7 +247,6 @@ th {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   appearance: none;
-  /* color-adjust: exact; */
 }
 .table thead th i {
   margin-left: 0.325rem;
@@ -358,11 +340,10 @@ th {
 }
 .progress {
   display: flex;
-  /* height: 1rem; */
+
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
-  /* border-radius: 0.25rem; */
 }
 .progress .progress-bar {
   border-radius: 7px;
@@ -527,7 +508,6 @@ p {
   transition: all;
   transition-duration: 250ms;
   position: absolute;
-  /* margin: 0px 0 0 0; */
 }
 .lorem-text {
   font-weight: 300;
@@ -646,7 +626,6 @@ p {
     margin-left: -6%;
   }
   .form-check {
-    /* margin-left: -26px; */
     margin-left: -5px;
   }
   .recent-card {
@@ -665,6 +644,16 @@ p {
     min-width: 107%;
     margin-left: -5px;
   }
+  .todo-card > .card {
+    width: 100%;
+    min-width: 107%;
+    margin-left: -35px;
+  }
+  .Performer-card > .card {
+    width: 100%;
+    min-width: 107%;
+    margin-left: -34px;
+  }
 }
 
 @media only screen and (max-width: 766px) and (min-width: 425px) {
@@ -682,13 +671,8 @@ p {
   .market-overviewText {
     word-spacing: 1px;
   }
-  .stretch-card > .card {
-    width: 100%;
-    min-width: 116%;
-    margin-left: -8%;
-  }
+
   .form-check {
-    /* margin-left: -26px; */
     margin-left: -5px;
   }
   .list-wrapper ul li .form-check .form-check-label {
@@ -703,15 +687,25 @@ p {
   .activity-card {
     padding: 30px 23px 23px 23px;
   }
+  .stretch-card > .card {
+    width: 100%;
+    min-width: 103%;
+  }
   .stretch-card1 > .card {
     width: 100%;
-    min-width: 114%;
-    margin-left: -23px;
+    min-width: 104%;
   }
   .stretch-card2 > .card {
     width: 100%;
-    min-width: 114%;
-    margin-left: -23px;
+    min-width: 104%;
+  }
+  .todo-card > .card {
+    width: 100%;
+    min-width: 104%;
+  }
+  .Performer-card > .card {
+    width: 100%;
+    min-width: 104%;
   }
 }
 
@@ -729,11 +723,10 @@ p {
   }
   .stretch-card > .card {
     width: 100%;
-    min-width: 118%;
-    margin-left: -9%;
+    min-width: 105%;
+    margin-left: -1%;
   }
   .form-check {
-    /* margin-left: -26px; */
     margin-left: -5px;
   }
   .list-wrapper ul li .form-check .form-check-label {
@@ -750,19 +743,34 @@ p {
   }
   .stretch-card1 > .card {
     width: 100%;
-    min-width: 116%;
-    margin-left: -22px;
+    min-width: 105%;
+    margin-left: -1%;
   }
   .stretch-card2 > .card {
     width: 100%;
-    min-width: 116%;
-    margin-left: -22px;
+    min-width: 105%;
+    margin-left: -1%;
+  }
+  .todo-card > .card {
+    width: 100%;
+    min-width: 105%;
+    margin-left: -1%;
+  }
+  .Performer-card > .card {
+    width: 100%;
+    min-width: 105%;
+    margin-left: -1%;
   }
 }
 @media only screen and (max-width: 374px) and (min-width: 320px) {
   .mdi-flag {
     display: none;
   }
+  .badge {
+    overflow: visible;
+    max-width: 39%;
+  }
+
   .doughnut-chart {
     margin-top: 130px;
   }
@@ -786,8 +794,15 @@ p {
     width: 100%;
     min-width: 105%;
   }
+  .todo-card > .card {
+    width: 100%;
+    min-width: 105%;
+  }
+  .Performer-card > .card {
+    width: 100%;
+    min-width: 105%;
+  }
   .form-check {
-    /* margin-left: -26px; */
     margin-left: -5px;
   }
   .list-wrapper ul li .form-check .form-check-label {
