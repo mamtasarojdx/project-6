@@ -4,7 +4,7 @@ import "../CSS/AboutPage.css";
 function AboutPage() {
   return (
     <>
-      <section class="ftco-section ftco-image img" style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/bg_4.jpg.webp)" }}>
+      <section class="ftco-section1 ftco-image img" style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/bg_4.jpg.webp)" }}>
         <div class="container">
           <div class="row justify-content-end">
             <div class="col-md-6 heading-section aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">

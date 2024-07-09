@@ -1,9 +1,11 @@
 import React from "react";
+import "../CSS/FurnitureCollection.css";
+import { CiSearch } from "react-icons/ci";
 
 function FurnitureCollection() {
   return (
     <>
-      <section class="ftco-gallery ftco-no-pb ftco-section">
+      <section class="ftco-gallery ftco-no-pb ftco-section4">
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-lg-5 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
@@ -14,13 +16,15 @@ function FurnitureCollection() {
           <div class="row g-2">
             <div class="col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               <a
-                href="images/gallery-1.jpg"
+                href="images/gallery-1.jpg.webp"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-1.jpg)"}}
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-1.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>
@@ -30,12 +34,13 @@ function FurnitureCollection() {
               <a
                 href="images/gallery-1.jpg"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-2.jpg)"}}
-               
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-2.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>
@@ -45,12 +50,13 @@ function FurnitureCollection() {
               <a
                 href="images/gallery-3.jpg"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-3.jpg)"}}
-              
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-3.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>
@@ -60,27 +66,29 @@ function FurnitureCollection() {
               <a
                 href="images/gallery-4.jpg"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-4.jpg)"}}
-                
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-4.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>
               </a>
             </div>
-            <div class="col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="col-md-3 aos-init aos-animate " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
               <a
                 href="images/gallery-5.jpg"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-5.jpg)"}}
-               
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-5.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>
@@ -90,12 +98,13 @@ function FurnitureCollection() {
               <a
                 href="images/gallery-6.jpg"
                 class="gallery-wrap img d-flex align-items-end justify-content-center glightbox"
-                style={{backgroundImage: "url(images/gallery-6.jpg)"}}
-                
+                style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/gallery-6.jpg.webp)" }}
               >
                 <div class="text">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search">
+                      <CiSearch />
+                    </span>
                   </div>
                   <h2 class="mb-0">Business Finance Consulting</h2>
                 </div>

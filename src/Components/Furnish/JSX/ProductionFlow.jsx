@@ -1,9 +1,13 @@
 import React from "react";
+import { FaCalculator } from "react-icons/fa";
+import "../CSS/ProductionFlow.css";
+import { SlSettings } from "react-icons/sl";
+import { FaBoxesPacking } from "react-icons/fa6";
 
 function ProductionFlow() {
   return (
     <>
-      <section class="ftco-section bg-light ftco-no-pt">
+      <section class="ftco-section6 bg-light ftco-no-pt">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
@@ -14,11 +18,11 @@ function ProductionFlow() {
           <div class="row justify-content-center g-0">
             <div class="col-md-4 text-center d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               <div class="flow-wrap flow-wrap-right">
-                <div class="icon">
+                <div class="icon1">
                   <div class="d-flex align-items-center justify-content-center">
                     <small>01</small>
                   </div>
-                  <span class="flaticon-calculator"></span>
+                  <span class="flaticon-calculator"><FaCalculator /></span>
                 </div>
                 <div class="text">
                   <h2>Get A Free Quote</h2>
@@ -28,11 +32,11 @@ function ProductionFlow() {
             </div>
             <div class="col-md-4 text-center d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               <div class="flow-wrap flow-wrap-2">
-                <div class="icon">
+                <div class="icon2">
                   <div class="d-flex align-items-center justify-content-center">
                     <small>02</small>
                   </div>
-                  <span class="flaticon-production"></span>
+                  <span class="flaticon-production"><SlSettings /></span>
                 </div>
                 <div class="text">
                   <h2>Production</h2>
@@ -42,11 +46,11 @@ function ProductionFlow() {
             </div>
             <div class="col-md-4 text-center d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               <div class="flow-wrap flow-wrap-left">
-                <div class="icon">
+                <div class="icon1">
                   <div class="d-flex align-items-center justify-content-center">
                     <small>03</small>
                   </div>
-                  <span class="flaticon-package"></span>
+                  <span class="flaticon-package"><FaBoxesPacking /></span>
                 </div>
                 <div class="text">
                   <h2>Delivery &amp; Assembly</h2>

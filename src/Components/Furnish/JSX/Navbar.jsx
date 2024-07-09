@@ -9,6 +9,7 @@ import ProductionFlow from "./ProductionFlow";
 import RecentBlog from "./RecentBlog";
 import Footer from "./Footer";
 import "../CSS/Navbar.css"
+import Customers from "./Customers";
 
 function Navbar() {
   return (
@@ -63,12 +64,13 @@ function Navbar() {
       <HomePage/>
       <AmazingDeals/>
       <AboutPage/>
-      {/* <FurnitureCollection/>
+      <FurnitureCollection/>
       <TechnicalStatistics/>
       <HappyCustomers/>
+      {/* <Customers/> */}
       <ProductionFlow/>
       <RecentBlog/>
-      <Footer/> */}
+      <Footer/>
     </>
   );
 }

@@ -1,7 +1,8 @@
-.ftco-section {
-  /* padding: 8em 0; */
+.ftco-section2 {
+  padding: 8em 0;
   position: relative;
   width: 100%;
+  margin-top: -130px;
 }
 .container-fluid {
   width: 100%;

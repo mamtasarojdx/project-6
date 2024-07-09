@@ -11,9 +11,9 @@ function HomePage() {
           <div class="row no-gutters slider-text align-items-center align-items-stretch">
             <div class="col-md-6 col-lg-6 text d-flex align-items-center">
               <div class="desc">
-                <h1 class="">
+                <span class="heading-1">
                   Best Design of <span>Furniture Collections</span>
-                </h1>
+                </span>
                 <div class="w-75">
                   <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                   <p class="d-flex align-items-center mt-4">

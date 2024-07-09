@@ -1,9 +1,10 @@
 import React from "react";
+import "../CSS/TechnicalStatistics.css";
 
 function TechnicalStatistics() {
   return (
     <>
-      <section class="ftco-section-counter img"   style={{backgroundImage: "url(images/bg_3.jpg)"}}>
+      <section class="ftco-section-counter img" style={{ backgroundImage: "url(https://preview.colorlib.com/theme/furnish/images/bg_3.jpg.webp)" }}>
         <div class="overlay"></div>
         <div class="container">
           <div class="row justify-content-center">

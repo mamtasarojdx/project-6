@@ -1,0 +1,189 @@
+.ftco-section7 {
+    /* padding: 8em 0; */
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+}
+@media (min-width: 1400px) {
+    .container, .container-xl {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-xl {
+        max-width: 1140px;
+    }
+}
+.container-xl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+[data-aos=fade-up] {
+    transform: translate3d(0, 100px, 0);
+}
+.heading-section .subheading {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.heading-section h2 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+    
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        -webkit-box-flex: 0;
+    
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+[data-aos][data-aos][data-aos-delay="100"].aos-animate, body[data-aos-delay="100"] [data-aos].aos-animate {
+    transition-delay: .1s;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+[data-aos][data-aos][data-aos-delay="100"], body[data-aos-delay="100"] [data-aos] {
+    transition-delay: 0;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+.blog-entry {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 0;
+    background: #fafafa;
+}
+
+@media (min-width: 992px) {
+    .block-20 {
+        width: 50%;
+    }
+}
+.block-20 {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+.img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+a, button {
+  
+    transition: .3s all ease;
+    color: #cf7500;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .blog-entry .text {
+        width: 50%;
+    }
+}
+.blog-entry .text {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    padding: 30px;
+}
+.blog-entry .meta {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.blog-entry .meta span {
+    margin-right: 10px;
+}
+.blog-entry .meta {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+.blog-entry .meta span i {
+    color: #cf7500;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  
+}
+.blog-entry .meta span i {
+    color: #cf7500;
+}
+.blog-entry .text .heading {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.blog-entry .text .heading a {
+    color: #052c43;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

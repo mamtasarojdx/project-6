@@ -8,7 +8,7 @@ import { MdSupportAgent } from "react-icons/md";
 function AmazingDeals() {
   return (
     <>
-      <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <section class="ftco-section2 ftco-no-pt ftco-no-pb">
         <div class="container-fluid">
           <div class="row g-2 py-2">
             <div class="col-md-3 services-wrap d-flex">

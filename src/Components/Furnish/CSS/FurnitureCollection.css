@@ -1,0 +1,140 @@
+.ftco-section4 {
+  padding: 8em 0;
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+.ftco-gallery {
+  width: 100%;
+  position: relative;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+.heading-section .subheading {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.heading-section h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+[data-aos][data-aos][data-aos-delay="100"].aos-animate,
+body[data-aos-delay="100"] [data-aos].aos-animate {
+  transition-delay: 0.1s;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+[data-aos^="fade"][data-aos^="fade"] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+.ftco-gallery .gallery-wrap {
+  width: 100%;
+  height: 340px;
+  display: block;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 0px;
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.ftco-gallery .gallery-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.ftco-gallery .gallery-wrap .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ftco-gallery .gallery-wrap .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  text-align: left;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: 0; 
+}
+
+.ftco-gallery .gallery-wrap:hover .text {
+  opacity: 1; 
+}
+
+.ftco-gallery .gallery-wrap .text h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 30px;
+
+  transition: color 0.3s ease; 
+}
+
+.ftco-gallery .gallery-wrap:hover .text h2 {
+  color: #fff;
+}
+
+.ftco-gallery .gallery-wrap .icon {
+  position: absolute;
+  bottom: 75px;
+  left: 15px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  z-index: 1; 
+}
+
+.ftco-gallery .gallery-wrap:hover .icon {
+  opacity: 1; 
+}
+
+.ftco-gallery .gallery-wrap:hover .icon span {
+  color: #fff; 
+}
