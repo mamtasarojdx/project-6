@@ -36,19 +36,19 @@ function ContactBar() {
             </ul>
             <div>
               <div class="btn-wrapper">
-                <a href="#" class="btn btn-otline-dark align-items-center">
+                <a href="#" class="btn1 btn-otline-dark align-items-center">
                   <i class="icon-share">
                     <CiShare2 />
                   </i>{" "}
                   Share
                 </a>
-                <a href="#" class="btn btn-otline-dark">
+                <a href="#" class="btn1 btn-otline-dark">
                   <i class="icon-printer">
                     <FiPrinter />
                   </i>{" "}
                   Print
                 </a>
-                <a href="#" class="btn btn-primary text-white me-0">
+                <a href="#" class="btn2 btn-primary text-white me-0">
                   <i class="icon-download">
                     <RiExportLine />
                   </i>{" "}

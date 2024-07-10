@@ -54,19 +54,6 @@ dl li {
   border-radius: 0 4px 0 0;
 }
 
-.btn {
-  padding: 8px 15px;
-  border: 1px solid #caddff;
-  box-sizing: border-box;
-  border-radius: 6px;
-  color: #000000;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  align-items: center;
-}
 
 .statistics-details {
   margin: 20px 0 48px 0;
@@ -97,7 +84,47 @@ dl li {
   font-size: 12px;
   margin: -1px 4px 0px 0px;
 }
-
+.btn1{
+  padding: 8px 15px;
+  text-decoration: none;
+  border: 1px solid #caddff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  align-items: center;
+}
+.btn1:hover {
+  color: black;
+ 
+}
+.btn2 {
+  padding: 8px 15px;
+  background-color: #1f3bb3;
+  text-decoration: none;
+  /* border: 1px solid #caddff; */
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  align-items: center;
+}
+.btn2:hover {
+  color: white;
+  background-color: #1f3bb3;
+}
+.icon-menu{
+  color: black;
+  margin-left: -10px;
+}
 .mdi:before,
 .mdi-set {
   display: inline-block;
@@ -107,7 +134,9 @@ dl li {
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
 }
-
+.btn-wrapper{
+  margin-top: -19px;
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .home-tab .btn {
     padding: 4px 16px 7px 7px;

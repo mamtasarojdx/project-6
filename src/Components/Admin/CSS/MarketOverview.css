@@ -51,11 +51,15 @@
 .dropdown {
   position: relative;
 }
-.dropdown .btn {
+.dropdown .btn3 {
   border: none;
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
+}
+.btn3-secondary {
+  background: #f1f1f1;
+  color: #1f1f1f;
 }
 .dropdown .dropdown-toggle:after {
   border-top: 0;
@@ -72,10 +76,7 @@
   margin-left: 0.3rem;
   font-weight: bold;
 }
-.btn-secondary {
-  background: #f1f1f1;
-  color: #1f1f1f;
-}
+
 .dropdown .dropdown-menu {
   margin-top: 2px;
   font-size: 0.812rem;
@@ -150,10 +151,23 @@
   margin-bottom: 0.625rem;
 }
 
-.btn.btn-lg {
+.btn2.btn-lg {
   font-size: 14px;
   line-height: 18px;
   padding: 10px;
+}
+.btn2 {
+  padding: 8px 15px;
+  border: 1px solid #caddff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  align-items: center;
 }
 .btn i {
   font-size: 1rem;
@@ -451,26 +465,17 @@ p {
   width: 43px;
   height: 43px;
 }
-.btn.btn-icons {
+.btn4.btn4-icons {
+  border: 1px solid #1f3bb3;
   width: 24px;
+  border-color: #1f3bb3;
   height: 24px;
   padding: 0;
   padding-top: 1px;
+  background: #1f3bb3;
 }
-.btn {
-  padding: 8px 15px;
-  border: 1px solid #caddff;
-  box-sizing: border-box;
-  border-radius: 6px;
-  color: #000000;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  align-items: center;
-}
-.btn.btn-icons.todo-list-add-btn {
+
+.btn4.btn4-icons.todo-list-add-btn {
   border-radius: 100%;
 }
 .btn.btn-icons.todo-list-add-btn i {
@@ -536,6 +541,9 @@ p {
 }
 .activity-card {
   padding: 30px 23px 105px 23px;
+}
+.Performer-card {
+  padding-bottom: 25px;
 }
 .leave-report {
   margin: -28px 0 -30px 0;

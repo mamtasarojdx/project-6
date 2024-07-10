@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/AboutPage.css";
+import { FaPlay } from "react-icons/fa";
 
 function AboutPage() {
   return (
@@ -16,7 +17,7 @@ function AboutPage() {
               </p>
               <a href="https://www.youtube.com/watch?v=9ZZ7pq331Dc" class="d-flex glightbox pt-4 align-items-center">
                 <div class="icon">
-                  <span class="fa fa-play"></span>
+                  <span class="fa fa-play"><FaPlay /></span>
                 </div>
                 <div class="text ps-4">
                   <span>Watch Video</span>

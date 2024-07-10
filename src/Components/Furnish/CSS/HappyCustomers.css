@@ -2,10 +2,11 @@
   position: relative;
   z-index: 0;
 }
-.ftco-section {
+.ftco-section5 {
   padding: 8em 0;
   position: relative;
   width: 100%;
+  margin-bottom: -140px;
 }
 @media (min-width: 1400px) {
   .container-xl {
@@ -107,28 +108,18 @@ body[data-aos-duration="400"] [data-aos] {
 }
 .testimony-section .tns-nav {
   text-align: center;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
+    margin: 0;
+    position: absolute;
+    bottom: 45px;
+    left: -39px;
+    right: 0;
+    z-index: 99;
 }
 .testimony-section .tns-nav > .tns-nav-active {
-  background: #cf7500;
+  background: #cf7500 !important;
+ 
 }
-.testimony-section .tns-outer [aria-controls],
-.testimony-section .tns-outer [data-action] {
-  cursor: pointer;
-}
-.testimony-section .tns-nav > [aria-controls] {
-  width: 30px;
-  height: 2px;
-  padding: 0;
-  margin: 0 5px;
-  background: #ddd;
-  border: 0;
-}
+
 .testimony-section .tns-outer [aria-controls],
 .testimony-section .tns-outer [data-action] {
   cursor: pointer;
@@ -204,8 +195,21 @@ body[data-aos-duration="400"] [data-aos] {
   box-shadow: 0px 30px 33px -41px rgba(0, 0, 0, 0.24);
 }
 .testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap {
-  background: #cf7500;
-  color: rgba(255, 255, 255, 0.9);
+  background: #cf7500 !important; 
+  color: white !important; 
+}
+.testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap p{
+
+  color: white !important; 
+}
+.testimony-section .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .testimony-wrap .position{
+
+  color: white !important; 
+}
+
+/* Hide Tiny Slider navigation buttons */
+.tns-controls button {
+  display: none;
 }
 
 @media (min-width: 62.5em) {
@@ -277,6 +281,12 @@ body[data-aos-duration="400"] [data-aos] {
 .testimony-wrap .position {
   font-size: 16px;
   color: #4d4d4d;
+  font-weight: 100;
 }
 
-
+.ftco-section5 p {
+  margin-top: 0;
+  color: #848786;
+  font-size: 18px;
+  line-height: 28px;
+}

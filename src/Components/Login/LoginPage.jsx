@@ -11,11 +11,11 @@ function LoginPage() {
             <div class="row w-100 mx-0">
               <div class="col-lg-4 mx-auto">
                 <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                  <div class="brand-logo">
+                  <div class="admin-logo2">
                     <img src="https://demo.bootstrapdash.com/star-admin2-free/template/images/logo.svg" alt="logo" />
                   </div>
                   <h4 className="started-text">Hello! let's get started</h4>
-                  <h6 class="fw-light">Sign in to continue.</h6>
+                  <h6 class="Sign-continue">Sign in to continue.</h6>
                   <form class="pt-3">
                     <div class="form-group">
                       <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username" />
@@ -24,13 +24,13 @@ function LoginPage() {
                       <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
                     </div>
                     <div class="mt-3">
-                      <a class="btn btn-block btn-primary btn-lg font-weight-medium sign-btn" href="../../index.html">
+                      <div class=" font-weight-medium sign-btn" href="../../index.html">
                         SIGN IN
-                      </a>
+                      </div>
                     </div>
                     <div class="my-2 d-flex justify-content-between align-items-center">
-                      <div class="form-check">
-                        <label class="form-check-label text-muted">
+                      <div class="sign-check">
+                        <label class="sign-check-label text-muted">
                           <input type="checkbox" class="form-check-input" />
                           Keep me signed in
                           <i class="input-helper"></i>
@@ -41,14 +41,14 @@ function LoginPage() {
                       </a>
                     </div>
                     <div class="mb-2">
-                      <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+                      <button type="button" class="btn4 btn-block btn4-facebook auth-form-btn4">
                         <span className="facebook-icon">
                           <GrFacebookOption />
                         </span>{" "}
-                        Connect using facebook
+                     <span className="facebook-text"> Connect using facebook</span>  
                       </button>
                     </div>
-                    <div class="text-center mt-4 fw-light account">
+                    <div class="text-center mt-4  account">
                       Don't have an account?{" "}
                       <a href="register.html" class="text-primary">
                         Create

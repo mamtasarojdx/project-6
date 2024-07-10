@@ -28,11 +28,11 @@
   flex-grow: 1;
 }
 
-.auth .brand-logo {
+.auth .admin-logo2 {
   margin-bottom: 2rem;
 }
 
-.auth .brand-logo img {
+.auth .admin-logo2 img {
   width: 90px;
 }
 .auth form .form-group {
@@ -51,12 +51,19 @@ input[type="checkbox"] {
   background-color: #ebedf2;
   padding: 9px;
 }
-.form-check .form-check-input {
+.sign-check .form-check-input {
   margin: 2px 10px 0 0px;
 }
-.btn-primary {
+.sign-btn {
   background: #1f3bb3;
   color: #ffffff;
+  line-height: 1.5;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 12px;
+  width: 38%;
+  padding: 17px 0px 17px 45px;
+  font-weight: 100;
 }
 .auth form .form-group .form-control {
   background: transparent;
@@ -64,11 +71,7 @@ input[type="checkbox"] {
   font-size: 0.9375rem;
   padding: 15px 0px 15px 30px;
 }
-.sign-btn {
-  padding: 1rem 3rem;
-  line-height: 1.5;
-  font-size: 16px;
-}
+
 .auth form .auth-form-btn {
   line-height: 1.5;
   font-size: 16px;
@@ -85,23 +88,85 @@ input[type="checkbox"] {
 
 .facebook-icon {
   font-size: 22px;
+  color: white;
 }
-.form-check {
+.facebook-text {
+  color: white;
+}
+.sign-check {
   position: relative;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 0;
   font-size: 14px;
+  margin-left: 0px;
 }
 .auth form .auth-link {
   font-size: 0.812rem;
   color: black;
+  font-weight: 100;
 }
 .account {
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 100;
 }
-.started-text{
+.started-text {
   font-size: 20px;
   font-weight: 400;
+}
+.Sign-continue {
+  font-weight: 100;
+}
+.auth form .auth-form-btn4 {
+  padding: 6px 47px 13px 47px;
+  line-height: 1.5;
+}
+.btn4-facebook {
+  background: #7DA0FA;
+  color: #ffffff;
+}
+.btn4 {
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #7DA0FA;;
+}
+@media only screen and (max-width: 374px) and (min-width: 320px) {
+  .sign-btn {
+    width: 58%;
+  }
+  .sign-check {
+    margin-left: -2px !important;
+  }
+}
+@media only screen and (max-width: 424px) and (min-width: 375px) {
+  .sign-btn {
+    width: 48%;
+  }
+  .sign-check {
+    margin-left: -1px !important;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 425px) {
+  .sign-btn {
+    width: 44%;
+  }
+  .sign-check {
+    margin-left: -0px !important;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .sign-btn {
+    width: 24%;
+  }
+  .sign-check {
+    margin-left: 2px !important;
+  }
+}
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+  .sign-btn {
+    width: 70%;
+  }
 }

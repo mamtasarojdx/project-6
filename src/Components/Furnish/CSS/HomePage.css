@@ -54,24 +54,31 @@
   display: block;
   font-weight: 700;
 }
-p {
-  margin-top: 0;
+.hero-wrap p {
+  margin-top: 10px;
   margin-bottom: 1rem;
   font-size: 17px;
 }
-.btn.btn-white {
+.btn5.btn-white {
   background: #fff !important;
   border: 1px solid #fff !important;
   color: #267aa4 !important;
 }
-.btn {
-  padding: 9px 12px;
+.btn5 {
+  padding: 15px 22px !important;
   cursor: pointer;
   border-radius: 40px;
-
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.collection-text{
+  color: black;
+  font-weight: bolder;
+}
+
+
+
+

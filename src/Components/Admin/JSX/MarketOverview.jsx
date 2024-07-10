@@ -29,7 +29,7 @@ function MarketOverview() {
                       <div>
                         <div class="dropdown">
                           <button
-                            class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0"
+                            class="btn3 btn3-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0"
                             type="button"
                             id="dropdownMenuButton2"
                             data-bs-toggle="dropdown"
@@ -98,7 +98,7 @@ function MarketOverview() {
                         <p class="card-subtitle card-subtitle-dash">You have 50+ new requests</p>
                       </div>
                       <div>
-                        <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button">
+                        <button class="btn2 btn-primary btn-lg text-white mb-0 me-0" type="button">
                           <i class="mdi mdi-account-plus">
                             <IoPersonAddSharp />
                           </i>
@@ -526,7 +526,7 @@ function MarketOverview() {
                         <div class="d-flex justify-content-between align-items-center">
                           <h4 class="card-title card-title-dash">Todo list</h4>
                           <div class="add-items d-flex mb-0">
-                            <button class="add btn btn-icons btn-rounded btn-primary todo-list-add-btn text-white me-0 pl-12p">
+                            <button class="add btn4 btn4-icons btn-rounded todo-list-add-btn text-white me-0 pl-12p">
                               <i class="mdi mdi-plus">
                                 <FaPlus />
                               </i>
@@ -649,7 +649,7 @@ function MarketOverview() {
                           <div>
                             <div class="dropdown">
                               <button
-                                class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0"
+                                class="btn3 btn3-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0"
                                 type="button"
                                 id="dropdownMenuButton3"
                                 data-bs-toggle="dropdown"
@@ -679,8 +679,8 @@ function MarketOverview() {
             </div>
             {/* ------------Top Performer------------ */}
             <div class="row flex-grow mt-4 mb-5">
-              <div class="col-12 grid-margin Performer-card">
-                <div class="card card-rounded">
+              <div class="col-12 grid-margin">
+                <div class="card card-rounded Performer-card">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-lg-12">

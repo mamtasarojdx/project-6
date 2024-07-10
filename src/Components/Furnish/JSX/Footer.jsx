@@ -80,12 +80,12 @@ function Footer() {
                     <div class="meta">
                       <div>
                         <a href="#">
-                          <span class="fa fa-calendar"><FaCalendarAlt /></span> Mar. 05, 2021
+                          <span class="fa fa-calendar"><FaCalendarAlt /></span><span className="text-content">Mar. 05, 2021</span> 
                         </a>
                       </div>
                       <div>
                         <a href="#">
-                          <span class="fa fa-user"><FaUser /></span> Admin
+                          <span class="fa fa-user"><FaUser /></span> <span className="text-content">Admin</span>
                         </a>
                       </div>
                     </div>
@@ -100,12 +100,12 @@ function Footer() {
                   <div class="meta">
                       <div>
                         <a href="#">
-                          <span class="fa fa-calendar"><FaCalendarAlt /></span> Mar. 05, 2021
+                          <span class="fa fa-calendar"><FaCalendarAlt /></span><span className="text-content">Mar. 05, 2021</span> 
                         </a>
                       </div>
                       <div>
                         <a href="#">
-                          <span class="fa fa-user"><FaUser /></span> Admin
+                          <span class="fa fa-user"><FaUser /></span> <span className="text-content">Admin</span>
                         </a>
                       </div>
                     </div>
