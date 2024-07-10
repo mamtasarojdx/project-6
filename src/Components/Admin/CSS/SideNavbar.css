@@ -194,6 +194,7 @@ ul li {
 }
 @media only screen and (max-width: 1500px) and (min-width: 1439px) {
   .sidebar {
-    height: 556vh;
+    /* height: 556vh; */
+    height: 174vh;
   }
 }

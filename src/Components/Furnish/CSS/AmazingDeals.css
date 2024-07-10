@@ -1,4 +1,4 @@
-.ftco-section2 {
+/* .ftco-section2 {
   padding: 8em 0;
   position: relative;
   width: 100%;
@@ -33,7 +33,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  /* background: #cf7500; */
+ 
   position: relative;
   margin-left: 0;
 }
@@ -43,7 +43,7 @@
   font-size: 40px;
   top: 50%;
   left: 50%;
-  /* -webkit-transform: translate(-50%, -50%); */
+  
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -83,4 +83,4 @@ h2 {
 }
 .services-wrap .services.color-4 .icon {
   background: #d29a61;
-}
+} */

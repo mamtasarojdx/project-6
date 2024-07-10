@@ -1,4 +1,4 @@
-.ftco-section6 {
+/* .ftco-section6 {
   padding: 8em 0;
   position: relative;
   width: 100%;
@@ -110,7 +110,7 @@ body[data-aos-duration="400"] [data-aos] {
   z-index: 0;
   transition: all 0.3s ease;
 }
- .icon1 {
+.icon1 {
   width: 130px;
   height: 130px;
   background: #fff;
@@ -123,18 +123,18 @@ body[data-aos-duration="400"] [data-aos] {
   box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
 }
 .icon2 {
-    width: 130px;
-    height: 130px;
-    background-color: #81c2e2;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    border-radius: 50%;
-    position: relative;
-    -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
-  }
- .icon1 > div {
+  width: 130px;
+  height: 130px;
+  background-color: #81c2e2;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
+}
+.icon1 > div {
   position: absolute;
   top: 2px;
   right: 4px;
@@ -146,101 +146,104 @@ body[data-aos-duration="400"] [data-aos] {
   border-radius: 50%;
 }
 .icon2 > div {
-    position: absolute;
-    top: 2px;
-    right: 4px;
-    content: "";
-    color: white;
-    width: 30px;
-    height: 30px;
-    background: #cf7500;
-    border-radius: 50%;
-  }
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  content: "";
+  color: white;
+  width: 30px;
+  height: 30px;
+  background: #cf7500;
+  border-radius: 50%;
+}
 .flow-wrap .icon > div small {
   color: #fff;
 }
 small {
   font-size: 0.875em;
 }
-.flaticon-package{
-    font-size: 70px;
-    line-height: 1.2;
-    color: #cf7500;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.flaticon-package {
+  font-size: 70px;
+  line-height: 1.2;
+  color: #cf7500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .flaticon-calculator {
-    font-size: 70px;
-    line-height: 1.2;
-    color: #cf7500;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  font-size: 70px;
+  line-height: 1.2;
+  color: #cf7500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.flaticon-production  {
-    font-size: 70px;
-    line-height: 1.2;
-    background-color: #81c2e2;
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.flaticon-production {
+  font-size: 70px;
+  line-height: 1.2;
+  background-color: #81c2e2;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flow-wrap .text {
-    width: 100%;
+  width: 100%;
 }
 .flow-wrap .text h2 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-family: "Poppins", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Poppins", Arial, sans-serif;
 }
 @media (min-width: 768px) {
-    .flow-wrap.flow-wrap-right:after {
-        position: absolute;
-        top: 80px;
-        right: -131px;
-        content: '';
-        width: 67%;
-        height: 1px;
-        border-bottom: 1px dashed #cccccc;
-        z-index: -1;
-    }
+  .flow-wrap.flow-wrap-right:after {
+    position: absolute;
+    top: 80px;
+    right: -131px;
+    content: "";
+    width: 67%;
+    height: 1px;
+    border-bottom: 1px dashed #cccccc;
+    z-index: -1;
+  }
 }
 @media (min-width: 768px) {
-    .flow-wrap.flow-wrap-2:after {
-        position: absolute;
-        top: 80px;
-        left: 255px;
-        right: 0;
-        content: '';
-        width: 70%;
-        height: 1px;
-        border-bottom: 1px dashed #cccccc;
-        z-index: -1;
-    }
+  .flow-wrap.flow-wrap-2:after {
+    position: absolute;
+    top: 80px;
+    left: 255px;
+    right: 0;
+    content: "";
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px dashed #cccccc;
+    z-index: -1;
+  }
 }
 .ftco-section6 p {
   margin-top: 0;
@@ -249,24 +252,24 @@ small {
   line-height: 28px;
 }
 .btn.btn-primary {
-    background: #cf7500 !important;
-    border: 1px solid #cf7500 !important;
-    color: #fff !important;
+  background: #cf7500 !important;
+  border: 1px solid #cf7500 !important;
+  color: #fff !important;
 }
 .btn {
   padding: 19px 21px !important;
-    cursor: pointer;
-    border-radius: 40px;
-    /* -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09); */
-    -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-    box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 40px;
+
+  -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .btn.btn-secondary {
-    background: #6db7dd !important;
-    border: 1px solid #6db7dd !important;
-    color: #fff !important;
-}
+  background: #6db7dd !important;
+  border: 1px solid #6db7dd !important;
+  color: #fff !important;
+} */

@@ -54,7 +54,6 @@ dl li {
   border-radius: 0 4px 0 0;
 }
 
-
 .statistics-details {
   margin: 20px 0 48px 0;
 }
@@ -84,7 +83,7 @@ dl li {
   font-size: 12px;
   margin: -1px 4px 0px 0px;
 }
-.btn1{
+.btn1 {
   padding: 8px 15px;
   text-decoration: none;
   border: 1px solid #caddff;
@@ -100,7 +99,6 @@ dl li {
 }
 .btn1:hover {
   color: black;
- 
 }
 .btn2 {
   padding: 8px 15px;
@@ -121,7 +119,7 @@ dl li {
   color: white;
   background-color: #1f3bb3;
 }
-.icon-menu{
+.icon-menu {
   color: black;
   margin-left: -10px;
 }
@@ -134,7 +132,7 @@ dl li {
   line-height: inherit;
   -webkit-font-smoothing: antialiased;
 }
-.btn-wrapper{
+.btn-wrapper {
   margin-top: -19px;
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {

@@ -1,4 +1,4 @@
-.ftco-section1 {
+/* .ftco-section1 {
   padding: 8em 0;
   position: relative;
   width: 100%;
@@ -32,7 +32,6 @@
 }
 a,
 button {
-  /* -webkit-transition: .3s all ease; */
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   color: #cf7500;
@@ -78,4 +77,4 @@ button {
     -webkit-box-shadow: 0 0 0 0 rgba(207, 117, 0, 0);
     box-shadow: 0 0 0 0 rgba(207, 117, 0, 0);
   }
-}
+} */

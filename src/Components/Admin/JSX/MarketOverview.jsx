@@ -679,7 +679,7 @@ function MarketOverview() {
             </div>
             {/* ------------Top Performer------------ */}
             <div class="row flex-grow mt-4 mb-5">
-              <div class="col-12 grid-margin">
+              <div class="col-12 grid-margin Performer-card">
                 <div class="card card-rounded Performer-card">
                   <div class="card-body">
                     <div class="row">

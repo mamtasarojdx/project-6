@@ -1,9 +1,7 @@
-.hero-wrap {
+/* .hero-wrap {
   height: 100vh;
   min-height: 100%;
   position: relative;
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
   background-position: center center;
   z-index: 0;
   background: #d4eaf5;
@@ -36,7 +34,7 @@
   height: 100vh;
   min-height: 100%;
   color: rgba(0, 0, 0, 0.4);
-  /* z-index: 3; */
+  
 }
 .hero-wrap .slider-text .text {
   position: relative;
@@ -47,7 +45,7 @@
   font-size: 40px;
   color: black;
   line-height: 1.2;
-  /* color: #052c43; */
+  
 }
 .hero-wrap .slider-text h1 span,
 .hero-wrap .slider-text .h1 span {
@@ -77,7 +75,7 @@
 .collection-text{
   color: black;
   font-weight: bolder;
-}
+} */
 
 
 
